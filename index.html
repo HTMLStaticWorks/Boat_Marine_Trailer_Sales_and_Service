@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarineHaul Pro — Premium Boat Trailer Sales, Service & Custom Fabrication</title>
+  <meta name="description"
+    content="MarineHaul Pro offers premium boat trailers, expert trailer repair, and custom fabrication. Marine-grade construction, precision engineering, built for serious boaters." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            navy: { DEFAULT: '#0a1628', 800: '#0d1f3c', 700: '#1e2a3b', 600: '#2d3f55' },
+            gold: { DEFAULT: '#c9a84c', light: '#e8c76b', dark: '#b8943a' },
+            silver: '#a8b4c0',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Barlow Condensed', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <style>
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=1920&q=85');
+      background-size: cover;
+      background-position: center 40%;
+    }
+
+    .cta-bg {
+      background-image: url('https://images.unsplash.com/photo-1520209268518-aec60b8bb5d7?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .service-bg {
+      background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .fab-bg {
+      background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+  <style id="theme-rtl-fixes">
+    /* Light Mode Overrides */
+    html:not(.dark) body {
+      background-color: #f8fafc !important;
+      color: #0f172a !important;
+    }
+
+    html:not(.dark) .bg-navy {
+      background-color: #f1f5f9 !important;
+    }
+
+    html:not(.dark) .bg-navy\/90 {
+      background-color: rgba(248, 250, 252, 0.95) !important;
+    }
+
+    html:not(.dark) .bg-navy-800 {
+      background-color: #ffffff !important;
+    }
+
+    html:not(.dark) .bg-navy-700 {
+      background-color: #f8fafc !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    html:not(.dark) .text-white {
+      color: #0f172a !important;
+    }
+
+    html:not(.dark) .text-gray-100,
+    html:not(.dark) .text-gray-200 {
+      color: #1e293b !important;
+    }
+
+    html:not(.dark) .text-gray-300,
+    html:not(.dark) .text-gray-400 {
+      color: #475569 !important;
+    }
+
+    html:not(.dark) .text-gray-500 {
+      color: #64748b !important;
+    }
+
+    html:not(.dark) .border-white\/5,
+    html:not(.dark) .border-white\/8,
+    html:not(.dark) .border-white\/10,
+    html:not(.dark) .border-white\/15 {
+      border-color: #e2e8f0 !important;
+    }
+
+    html:not(.dark) .bg-white\/5 {
+      background-color: rgba(0, 0, 0, 0.03) !important;
+    }
+
+    html:not(.dark) .bg-white\/10 {
+      background-color: rgba(0, 0, 0, 0.06) !important;
+    }
+
+    html:not(.dark) .hover\:bg-white\/10:hover {
+      background-color: rgba(0, 0, 0, 0.08) !important;
+    }
+
+    html:not(.dark) .hover\:bg-white\/5:hover {
+      background-color: rgba(0, 0, 0, 0.04) !important;
+    }
+
+    /* Preserve white text on dark image backgrounds (Hero, CTA, etc) */
+    html:not(.dark) .preserve-white .text-white,
+    html:not(.dark) .hero-bg .text-white,
+    html:not(.dark) .cta-bg .text-white,
+    html:not(.dark) .service-bg .text-white,
+    html:not(.dark) .fab-bg .text-white,
+    html:not(.dark) section[style*="background-image"] .text-white {
+      color: #ffffff !important;
+    }
+
+    html:not(.dark) .preserve-white .text-gray-100,
+    html:not(.dark) .hero-bg .text-gray-100,
+    html:not(.dark) .cta-bg .text-gray-100,
+    html:not(.dark) .service-bg .text-gray-100,
+    html:not(.dark) .fab-bg .text-gray-100,
+    html:not(.dark) section[style*="background-image"] .text-gray-100 {
+      color: #f3f4f6 !important;
+    }
+
+    html:not(.dark) .preserve-white .text-gray-300,
+    html:not(.dark) .hero-bg .text-gray-300,
+    html:not(.dark) .cta-bg .text-gray-300,
+    html:not(.dark) .service-bg .text-gray-300,
+    html:not(.dark) .fab-bg .text-gray-300,
+    html:not(.dark) section[style*="background-image"] .text-gray-300 {
+      color: #d1d5db !important;
+    }
+
+    html:not(.dark) .preserve-white .text-gray-400,
+    html:not(.dark) .hero-bg .text-gray-400,
+    html:not(.dark) .cta-bg .text-gray-400,
+    html:not(.dark) .service-bg .text-gray-400,
+    html:not(.dark) .fab-bg .text-gray-400,
+    html:not(.dark) section[style*="background-image"] .text-gray-400 {
+      color: #9ca3af !important;
+    }
+
+    /* RTL Layout Fixes */
+    html[dir="rtl"] {
+      text-align: right;
+    }
+
+    html[dir="rtl"] .ml-auto {
+      margin-right: auto !important;
+      margin-left: 0 !important;
+    }
+
+    html[dir="rtl"] .mr-auto {
+      margin-left: auto !important;
+      margin-right: 0 !important;
+    }
+
+    html[dir="rtl"] .ml-2 {
+      margin-right: 0.5rem !important;
+      margin-left: 0 !important;
+    }
+
+    html[dir="rtl"] .mr-2 {
+      margin-left: 0.5rem !important;
+      margin-right: 0 !important;
+    }
+
+    html[dir="rtl"] .ml-4 {
+      margin-right: 1rem !important;
+      margin-left: 0 !important;
+    }
+
+    html[dir="rtl"] .mr-4 {
+      margin-left: 1rem !important;
+      margin-right: 0 !important;
+    }
+
+    html[dir="rtl"] .pl-4 {
+      padding-right: 1rem !important;
+      padding-left: 0 !important;
+    }
+
+    html[dir="rtl"] .pr-4 {
+      padding-left: 1rem !important;
+      padding-right: 0 !important;
+    }
+
+    html[dir="rtl"] .pl-6 {
+      padding-right: 1.5rem !important;
+      padding-left: 0 !important;
+    }
+
+    html[dir="rtl"] .pr-6 {
+      padding-left: 1.5rem !important;
+      padding-right: 0 !important;
+    }
+
+    html[dir="rtl"] .left-0 {
+      right: 0 !important;
+      left: auto !important;
+    }
+
+    html[dir="rtl"] .right-0 {
+      left: 0 !important;
+      right: auto !important;
+    }
+
+    html[dir="rtl"] .border-l {
+      border-right-width: 1px !important;
+      border-left-width: 0 !important;
+    }
+
+    html[dir="rtl"] .border-r {
+      border-left-width: 1px !important;
+      border-right-width: 0 !important;
+    }
+
+    html[dir="rtl"] .translate-x-full {
+      transform: translateX(-100%) !important;
+    }
+
+    html[dir="rtl"] .-translate-x-full {
+      transform: translateX(100%) !important;
+    }
+  </style>
+</head>
+
+
+<body class="bg-navy-800 dark:bg-navy text-gray-100 font-sans">
+
+  <!-- HEADER -->
+  <header id="main-header"
+    class="fixed top-0 left-0 right-0 z-50 bg-navy/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-18 py-4">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0" aria-label="MarineHaul Pro - Home">
+          <div class="w-10 h-10 bg-gold-gradient rounded-lg flex items-center justify-center shadow-lg shadow-gold/20">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M2 18h20M4 18V10l4-3 4 3 4-3 4 3v8M8 18v-4h2v4M14 18v-4h2v4" stroke="#0a1628" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="6" cy="20" r="2" fill="#0a1628" />
+              <circle cx="18" cy="20" r="2" fill="#0a1628" />
+            </svg>
+          </div>
+          <div class="leading-tight">
+            <span class="font-display font-800 text-xl text-white tracking-wide">MARINEHAULPRO</span>
+            <span class="block text-[10px] text-gold/80 tracking-widest uppercase font-medium -mt-0.5">Trailer Sales
+              &amp; Service</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-1" aria-label="Main Navigation">
+          <a href="index.html" data-nav-link
+            class="px-3 py-2 text-sm font-medium text-gold transition-colors nav-active">Home</a>
+          <a href="home2.html" data-nav-link
+            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">Home 2</a>
+          <a href="about.html" data-nav-link
+            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">About</a>
+          <a href="service.html" data-nav-link
+            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">Service &amp;
+            Repair</a>
+          <a href="fabrication.html" data-nav-link
+            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">Fabrication</a>
+          <a href="blog.html" data-nav-link
+            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">Blog</a>
+          <a href="contact.html" data-nav-link
+            class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">Contact</a>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="hidden lg:flex items-center gap-2">
+          <button data-toggle-theme aria-label="Toggle theme"
+            class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200">
+            <span data-theme-icon>☀️</span>
+          </button>
+          <button data-toggle-rtl aria-label="Toggle RTL"
+            class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200 font-mono text-xs font-bold">
+            <span data-rtl-icon>⇄</span>
+          </button>
+          <a href="signup.html"
+            class="btn-gold px-5 py-2 text-sm rounded-lg font-bold shadow-lg shadow-gold/20">Signup</a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <button data-toggle-theme aria-label="Toggle theme"
+            class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 text-gray-300 transition-all">
+            <span data-theme-icon>☀️</span>
+          </button>
+          <button id="mobile-menu-toggle" aria-expanded="false" aria-label="Open menu"
+            class="w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white transition-all">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden"></div>
+
+  <!-- Mobile Menu Panel -->
+  <div id="mobile-menu"
+    class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-navy-800 border-l border-white/10 z-50 translate-x-full transition-transform duration-300 lg:hidden overflow-y-auto">
+    <div class="p-6 flex flex-col flex-1">
+      <div class="flex items-center justify-between mb-8">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-gold-gradient rounded-lg flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M2 18h20M4 18V10l4-3 4 3 4-3 4 3v8M8 18v-4h2v4M14 18v-4h2v4" stroke="#0a1628" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="6" cy="20" r="2" fill="#0a1628" />
+              <circle cx="18" cy="20" r="2" fill="#0a1628" />
+            </svg>
+          </div>
+          <span class="font-display font-800 text-white">MARINEHAULPRO</span>
+        </a>
+      </div>
+      <nav class="space-y-1 mb-8">
+        <a href="index.html"
+          class="flex items-center gap-3 px-4 py-3 text-gold font-semibold rounded-xl bg-gold/10 border border-gold/20">Home</a>
+        <a href="home2.html"
+          class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-gold font-medium rounded-xl hover:bg-white/5 transition-colors">Home
+          2</a>
+        <a href="about.html"
+          class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-gold font-medium rounded-xl hover:bg-white/5 transition-colors">About</a>
+        <a href="service.html"
+          class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-gold font-medium rounded-xl hover:bg-white/5 transition-colors">Service
+          &amp; Repair</a>
+        <a href="fabrication.html"
+          class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-gold font-medium rounded-xl hover:bg-white/5 transition-colors">Custom
+          Fabrication</a>
+        <a href="blog.html"
+          class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-gold font-medium rounded-xl hover:bg-white/5 transition-colors">Blog</a>
+        <a href="contact.html"
+          class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-gold font-medium rounded-xl hover:bg-white/5 transition-colors">Contact</a>
+      </nav>
+      <div class="space-y-3">
+        <a href="signup.html"
+          class="btn-gold flex items-center justify-center w-full px-5 py-3 rounded-xl font-bold text-navy">Signup</a>
+        <div class="flex gap-2 pt-2">
+          <button data-toggle-rtl
+            class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+            <span data-rtl-icon>⇄</span>
+            <span data-rtl-label>RTL</span>
+          </button>
+          <button data-toggle-theme
+            class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+            <span data-theme-icon>☀️</span>
+            <span data-theme-label>Light Mode</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN ==================== -->
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="relative min-h-screen flex items-center hero-bg" aria-label="Hero section">
+      <div class="absolute inset-0 hero-overlay"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
+        <div class="max-w-2xl">
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-semibold tracking-widest uppercase mb-6"
+            data-reveal>
+            <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+            Marine-Grade Trailer Specialists
+          </div>
+          <h1 class="font-display font-900 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-tight mb-6"
+            data-reveal>
+            BUILT TO HAUL.<br />
+            <span class="text-gradient-gold">BUILT TO LAST.</span>
+          </h1>
+          <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8 max-w-xl" data-reveal>
+            Premium boat trailers engineered for serious marine enthusiasts. From lightweight fishing rigs to heavy-duty
+            pontoon transport — we build, sell, and service the trailers that keep your boat moving.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4" data-reveal>
+            <a href="home2.html"
+              class="btn-gold inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-gold/25">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+              </svg>
+              Explore Trailers
+            </a>
+            <a href="contact.html"
+              class="btn-outline inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              Request a Quote
+            </a>
+          </div>
+
+          <!-- Stats Bar -->
+          <div class="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/10" data-reveal>
+            <div>
+              <div class="font-display font-800 text-3xl text-gold"><span data-counter="1500">0</span>+</div>
+              <div class="text-sm text-gray-400 mt-0.5">Trailers Delivered</div>
+            </div>
+            <div>
+              <div class="font-display font-800 text-3xl text-gold"><span data-counter="18">0</span> Yrs</div>
+              <div class="text-sm text-gray-400 mt-0.5">Industry Experience</div>
+            </div>
+            <div>
+              <div class="font-display font-800 text-3xl text-gold"><span data-counter="98">0</span>%</div>
+              <div class="text-sm text-gray-400 mt-0.5">Client Satisfaction</div>
+            </div>
+            <div>
+              <div class="font-display font-800 text-3xl text-gold"><span data-counter="24">0</span>/7</div>
+              <div class="text-sm text-gray-400 mt-0.5">Expert Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
+        <span class="text-xs tracking-widest uppercase">Scroll</span>
+        <div class="w-px h-10 bg-gradient-to-b from-gray-400 to-transparent animate-pulse"></div>
+      </div>
+    </section>
+
+    <!-- ===== TRAILER CATEGORIES ===== -->
+    <section class="py-20 lg:py-28 bg-navy dark:bg-navy" aria-label="Trailer categories">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-reveal>
+          <div class="section-divider mx-auto"></div>
+          <h2 class="font-display font-800 text-4xl lg:text-5xl text-white mb-4">TRAILER CATEGORIES</h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">Every trailer we offer is purpose-engineered for a specific boat
+            type, load, and towing environment. Find your perfect match.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Fishing -->
+          <a href="products.html#fishing"
+            class="group block card-hover bg-navy-700 rounded-2xl overflow-hidden border border-white/8 hover:border-gold/30 flex flex-col h-full">
+            <div class="img-zoom-wrap aspect-[4/3]">
+              <img src="https://images.pexels.com/photos/13191811/pexels-photo-13191811.jpeg"
+                alt="Fishing boat trailer on water's edge" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Fishing
+                  Boat Trailers</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+              <p class="text-gray-400 text-sm">Lightweight, corrosion-resistant frames for bass boats, aluminum hulls,
+                and center consoles up to 2,500 lbs.</p>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+            </div>
+          </a>
+
+          <!-- Pontoon -->
+          <a href="products.html#pontoon"
+            class="group block card-hover bg-navy-700 rounded-2xl overflow-hidden border border-white/8 hover:border-gold/30 flex flex-col h-full">
+            <div class="img-zoom-wrap aspect-[4/3]">
+              <img src="https://images.pexels.com/photos/36912579/pexels-photo-36912579.jpeg"
+                alt="Pontoon boat trailer at marina dock" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Pontoon
+                  Trailers</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+              <p class="text-gray-400 text-sm">Wide-beam bunk systems with adjustable cradle support for 16-30 ft
+                pontoon boats up to 6,000 lbs.</p>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+            </div>
+          </a>
+
+          <!-- Tandem Axle -->
+          <a href="products.html#tandem"
+            class="group block card-hover bg-navy-700 rounded-2xl overflow-hidden border border-white/8 hover:border-gold/30 flex flex-col h-full">
+            <div class="img-zoom-wrap aspect-[4/3]">
+              <img src="https://images.pexels.com/photos/15208048/pexels-photo-15208048.jpeg"
+                alt="Tandem axle boat trailer on highway" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Tandem Axle
+                  Trailers</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+              <p class="text-gray-400 text-sm">Dual-axle stability for longer hauls. Rated from 4,500 to 10,000 lbs with
+                hydraulic surge brakes.</p>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+            </div>
+          </a>
+
+          <!-- Heavy Duty -->
+          <a href="products.html#heavyduty"
+            class="group block card-hover bg-navy-700 rounded-2xl overflow-hidden border border-white/8 hover:border-gold/30 flex flex-col h-full">
+            <div class="img-zoom-wrap aspect-[4/3]">
+              <img src="https://images.pexels.com/photos/16207913/pexels-photo-16207913.jpeg"
+                alt="Heavy duty commercial marine trailer" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Heavy-Duty
+                  Trailers</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+              <p class="text-gray-400 text-sm">Commercial-grade tri-axle and gooseneck configurations for vessels
+                exceeding 10,000 lbs.</p>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="py-20 lg:py-28 bg-navy-700 relative overflow-hidden" aria-label="Why choose us">
+      <div class="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-transparent pointer-events-none">
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div data-reveal>
+            <div class="section-divider"></div>
+            <h2 class="font-display font-800 text-4xl lg:text-5xl text-white mb-6">WHY CHOOSE<br /><span
+                class="text-gradient-gold">MARINEHAULPRO?</span></h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-10">For 18 years, we've been building, selling, and
+              servicing boat trailers for recreational anglers, professional guides, and commercial marine operators
+              across the region. Our workshop is built around one principle — your boat deserves better than average.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div
+                class="flex gap-4 p-4 rounded-xl bg-white/4 border border-white/8 hover:border-gold/30 transition-colors card-hover">
+                <div class="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white text-sm mb-1">Marine-Grade Construction</h3>
+                  <p class="text-gray-400 text-xs leading-relaxed">Hot-dipped galvanized steel and marine-grade aluminum
+                    on every trailer frame.</p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 p-4 rounded-xl bg-white/4 border border-white/8 hover:border-gold/30 transition-colors card-hover">
+                <div class="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white text-sm mb-1">Precision Engineering</h3>
+                  <p class="text-gray-400 text-xs leading-relaxed">CNC-fabricated components with exact tolerances for
+                    perfect boat fit and load distribution.</p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 p-4 rounded-xl bg-white/4 border border-white/8 hover:border-gold/30 transition-colors card-hover">
+                <div class="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white text-sm mb-1">Expert Technicians</h3>
+                  <p class="text-gray-400 text-xs leading-relaxed">Certified marine trailer mechanics with an average of
+                    12 years hands-on experience.</p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 p-4 rounded-xl bg-white/4 border border-white/8 hover:border-gold/30 transition-colors card-hover">
+                <div class="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white text-sm mb-1">Custom Solutions</h3>
+                  <p class="text-gray-400 text-xs leading-relaxed">Every trailer we build can be customized to match
+                    your exact boat, tow vehicle, and usage requirements.</p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 p-4 rounded-xl bg-white/4 border border-white/8 hover:border-gold/30 transition-colors card-hover">
+                <div class="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white text-sm mb-1">Reliable Components</h3>
+                  <p class="text-gray-400 text-xs leading-relaxed">Dexter, Loadrite, and EZ-Lube bearing systems — only
+                    industry-leading hardware on every unit.</p>
+                </div>
+              </div>
+              <div
+                class="flex gap-4 p-4 rounded-xl bg-white/4 border border-white/8 hover:border-gold/30 transition-colors card-hover">
+                <div class="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white text-sm mb-1">Built for Long-Term Use</h3>
+                  <p class="text-gray-400 text-xs leading-relaxed">5-year structural warranty and lifetime technical
+                    support on all trailers we manufacture.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative" data-reveal>
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+              <img src="https://images.pexels.com/photos/16477585/pexels-photo-16477585.jpeg"
+                alt="Marine trailer workshop with professional technicians inspecting trailer axle"
+                class="w-full h-[500px] object-cover" />
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-gold rounded-2xl p-6 shadow-2xl shadow-gold/30">
+              <div class="font-display font-800 text-4xl text-navy">18+</div>
+              <div class="text-navy/80 font-semibold text-sm mt-1">Years of Marine Trailer Excellence</div>
+            </div>
+            <div class="absolute -top-6 -right-6 bg-navy-700 border border-white/10 rounded-2xl p-5 shadow-2xl">
+              <div class="flex items-center gap-2 mb-2">
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+              <div class="font-semibold text-white text-sm">4.9/5 Rating</div>
+              <div class="text-gray-400 text-xs">From 680+ verified reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED TRAILER MODELS ===== -->
+    <section class="py-20 lg:py-28 bg-navy" aria-label="Featured trailer models">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-14" data-reveal>
+          <div>
+            <div class="section-divider"></div>
+            <h2 class="font-display font-800 text-4xl lg:text-5xl text-white">FEATURED MODELS</h2>
+            <p class="text-gray-400 mt-2">Our best-selling trailer configurations, ready for immediate delivery.</p>
+          </div>
+          <a href="home2.html" class="btn-outline px-6 py-2.5 rounded-xl text-sm whitespace-nowrap">View All Trailers
+            →</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-navy-700 rounded-2xl overflow-hidden border border-white/8 hover:border-gold/30 flex flex-col h-full">
+            <div class="img-zoom-wrap aspect-[16/10]">
+              <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=600&q=80"
+                alt="ProAngler 2500 single axle fishing boat trailer" class="w-full h-full object-cover"
+                loading="lazy" />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <h3 class="font-display font-700 text-xl text-white">ProAngler 2500</h3>
+                  <p class="text-gold/80 text-sm">Single Axle • Galvanized</p>
+                </div>
+                <span class="bg-gold/15 text-gold text-xs font-bold px-3 py-1 rounded-full">In Stock</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2 mb-4">
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Capacity</div>
+                  <div class="text-white text-sm font-semibold">2,500 lbs</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Boat Length</div>
+                  <div class="text-white text-sm font-semibold">Up to 20 ft</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Axle Config</div>
+                  <div class="text-white text-sm font-semibold">Single 3500 lb</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Frame</div>
+                  <div class="text-white text-sm font-semibold">Galv. Steel</div>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm mb-5 leading-relaxed">Designed for bass, walleye, and aluminum fishing
+                boats. EZ-Lube hubs, LED lighting, and marine carpeted bunks included.</p>
+              <div class="flex gap-3 mt-auto">
+                <a href="home2.html" class="flex-1 btn-gold text-center py-2.5 rounded-lg text-sm font-bold">View
+                  Details</a>
+                <a href="contact.html" class="flex-1 btn-outline text-center py-2.5 rounded-lg text-sm font-bold">Get
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-navy-700 rounded-2xl overflow-hidden border border-white/8 hover:border-gold/30 flex flex-col h-full">
+            <div class="img-zoom-wrap aspect-[16/10]">
+              <img src="https://images.pexels.com/photos/39242500/pexels-photo-39242500.jpeg"
+                alt="PontoonMaster 6000 tandem axle pontoon trailer with wide bunks" class="w-full h-full object-cover"
+                loading="lazy" />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <h3 class="font-display font-700 text-xl text-white">PontoonMaster 6000</h3>
+                  <p class="text-gold/80 text-sm">Tandem Axle • Aluminum</p>
+                </div>
+                <span class="bg-green-500/15 text-green-400 text-xs font-bold px-3 py-1 rounded-full">Popular</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2 mb-4">
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Capacity</div>
+                  <div class="text-white text-sm font-semibold">6,000 lbs</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Boat Length</div>
+                  <div class="text-white text-sm font-semibold">Up to 28 ft</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Axle Config</div>
+                  <div class="text-white text-sm font-semibold">Tandem 3500 lb</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Frame</div>
+                  <div class="text-white text-sm font-semibold">Marine Alum.</div>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm mb-5 leading-relaxed">Wide-beam bunk system with independent leveling for
+                pontoon hulls. Surge hydraulic brakes, adjustable I-beam cradles, and 5-star wheel hubs.</p>
+              <div class="flex gap-3 mt-auto">
+                <a href="home2.html" class="flex-1 btn-gold text-center py-2.5 rounded-lg text-sm font-bold">View
+                  Details</a>
+                <a href="contact.html" class="flex-1 btn-outline text-center py-2.5 rounded-lg text-sm font-bold">Get
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-navy-700 rounded-2xl overflow-hidden border border-white/8 hover:border-gold/30 flex flex-col h-full">
+            <div class="img-zoom-wrap aspect-[16/10]">
+              <img src="https://images.pexels.com/photos/35591861/pexels-photo-35591861.jpeg"
+                alt="HeavyHaul 12000 tri-axle heavy duty boat trailer" class="w-full h-full object-cover"
+                loading="lazy" />
+            </div>
+            <div class="p-6 flex flex-col flex-1">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <h3 class="font-display font-700 text-xl text-white">HeavyHaul 12000</h3>
+                  <p class="text-gold/80 text-sm">Tri-Axle • Commercial Grade</p>
+                </div>
+                <span class="bg-blue-500/15 text-blue-400 text-xs font-bold px-3 py-1 rounded-full">Pro Series</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2 mb-4">
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Capacity</div>
+                  <div class="text-white text-sm font-semibold">12,000 lbs</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Boat Length</div>
+                  <div class="text-white text-sm font-semibold">Up to 38 ft</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Axle Config</div>
+                  <div class="text-white text-sm font-semibold">Triple 4000 lb</div>
+                </div>
+                <div class="bg-white/4 rounded-lg p-2.5">
+                  <div class="text-gray-400 text-xs">Frame</div>
+                  <div class="text-white text-sm font-semibold">Heavy Steel</div>
+                </div>
+              </div>
+              <p class="text-gray-400 text-sm mb-5 leading-relaxed">Commercial-spec triple axle for sportfishers,
+                yachts, and large cabin cruisers. Electric-over-hydraulic brakes, gooseneck hitch option, manual
+                leveling jacks.</p>
+              <div class="flex gap-3 mt-auto">
+                <a href="home2.html" class="flex-1 btn-gold text-center py-2.5 rounded-lg text-sm font-bold">View
+                  Details</a>
+                <a href="contact.html" class="flex-1 btn-outline text-center py-2.5 rounded-lg text-sm font-bold">Get
+                  Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICE & REPAIR ===== -->
+    <section class="py-20 lg:py-28 bg-navy-700" aria-label="Service and repair">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="relative order-2 lg:order-1" data-reveal>
+            <div class="rounded-2xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=85"
+                alt="Marine trailer service workshop with technicians" class="w-full h-[480px] object-cover" />
+            </div>
+            <!-- Services overlay -->
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy p-6">
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gold/20 text-gold text-xs font-semibold px-3 py-1 rounded-full">Brake Service</span>
+                <span class="bg-gold/20 text-gold text-xs font-semibold px-3 py-1 rounded-full">Bearing
+                  Replacement</span>
+                <span class="bg-gold/20 text-gold text-xs font-semibold px-3 py-1 rounded-full">Wheel Alignment</span>
+                <span class="bg-gold/20 text-gold text-xs font-semibold px-3 py-1 rounded-full">Electrical
+                  Systems</span>
+                <span class="bg-gold/20 text-gold text-xs font-semibold px-3 py-1 rounded-full">Frame Repairs</span>
+                <span class="bg-gold/20 text-gold text-xs font-semibold px-3 py-1 rounded-full">Winch Service</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2" data-reveal>
+            <div class="section-divider"></div>
+            <h2 class="font-display font-800 text-4xl lg:text-5xl text-white mb-4">PROFESSIONAL<br />SERVICE CENTER</h2>
+            <p class="text-gray-400 leading-relaxed mb-8">Our fully equipped workshop handles everything from routine
+              bearing greasing to complete structural overhauls. We service all makes and models of boat trailers — no
+              matter where you bought it.</p>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center gap-4 p-4 rounded-xl bg-white/4 border border-white/8">
+                <div class="w-2 h-2 rounded-full bg-gold flex-shrink-0"></div>
+                <div>
+                  <div class="text-white font-semibold">Brake System Service</div>
+                  <div class="text-gray-400 text-sm">Surge hydraulic, electric, and disc brake overhaul and adjustment
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 p-4 rounded-xl bg-white/4 border border-white/8">
+                <div class="w-2 h-2 rounded-full bg-gold flex-shrink-0"></div>
+                <div>
+                  <div class="text-white font-semibold">Wheel & Bearing Service</div>
+                  <div class="text-gray-400 text-sm">EZ-Lube re-packing, full bearing replacement, race inspection</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 p-4 rounded-xl bg-white/4 border border-white/8">
+                <div class="w-2 h-2 rounded-full bg-gold flex-shrink-0"></div>
+                <div>
+                  <div class="text-white font-semibold">Electrical & Lighting</div>
+                  <div class="text-gray-400 text-sm">LED conversion, wiring harness replacement, submersible lighting
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 p-4 rounded-xl bg-white/4 border border-white/8">
+                <div class="w-2 h-2 rounded-full bg-gold flex-shrink-0"></div>
+                <div>
+                  <div class="text-white font-semibold">Structural Repairs</div>
+                  <div class="text-gray-400 text-sm">Frame straightening, cross member replacement, weld repair,
+                    galvanizing</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="service.html" class="btn-gold inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold">
+              View All Services
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CUSTOM FABRICATION ===== -->
+    <section class="preserve-white py-20 lg:py-28 relative overflow-hidden" aria-label="Custom fabrication">
+      <div class="fab-bg absolute inset-0"></div>
+      <div class="absolute inset-0 bg-navy/85"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
+        <div class="section-divider mx-auto"></div>
+        <h2 class="font-display font-800 text-4xl lg:text-6xl text-white mb-6">CUSTOM FABRICATION</h2>
+        <p class="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed mb-8">
+          No trailer fits your boat perfectly off the shelf? We design and fabricate boat trailers from scratch.
+          Marine-grade steel, custom axle configurations, specialized bunk systems — built to your exact measurements
+          and load requirements.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6 mb-10">
+          <div class="flex items-center gap-2 text-gray-300">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Consultation & Design</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-300">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>CNC Frame Cutting</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-300">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Hot-Dip Galvanizing</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-300">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Custom Axle Config</span>
+          </div>
+          <div class="flex items-center gap-2 text-gray-300">
+            <svg class="w-5 h-5 text-gold" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>5-Year Warranty</span>
+          </div>
+        </div>
+        <a href="fabrication.html"
+          class="btn-gold inline-flex items-center gap-2 px-10 py-4 rounded-xl text-base font-bold shadow-2xl shadow-gold/30">
+          Build Your Custom Trailer
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="py-20 lg:py-28 bg-navy" aria-label="Customer reviews">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14" data-reveal>
+          <div class="section-divider mx-auto"></div>
+          <h2 class="font-display font-800 text-4xl lg:text-5xl text-white">WHAT OUR CUSTOMERS SAY</h2>
+          <p class="text-gray-400 mt-3">Real feedback from boat owners and marine professionals who trust MarineHaul
+            Pro.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-navy-700 border border-white/8 rounded-2xl p-6 card-hover flex flex-col" data-reveal>
+            <div class="flex gap-1 mb-4">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-5 flex-1">"I had MarineHaul build a custom tandem axle
+              trailer for my 24-foot Ranger. The fit is absolutely perfect — bunks land right where they should, loading
+              is effortless. Three years in and it's still performing flawlessly. Outstanding craftsmanship."</p>
+            <div class="flex items-center gap-3 mt-auto">
+              <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">RT
+              </div>
+              <div>
+                <div class="font-semibold text-white text-sm">Robert T.</div>
+                <div class="text-gray-400 text-xs">Bass Fishing Guide, Tennessee</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-navy-700 border border-white/8 rounded-2xl p-6 card-hover flex flex-col" data-reveal>
+            <div class="flex gap-1 mb-4">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-5 flex-1">"Brought in my aging pontoon trailer for a
+              complete service — brakes, bearings, new LED lighting, and some minor frame work. Picked it up looking
+              like new. These guys clearly know marine trailers inside and out. Price was fair and turnaround was fast."
+            </p>
+            <div class="flex items-center gap-3 mt-auto">
+              <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">SL
+              </div>
+              <div>
+                <div class="font-semibold text-white text-sm">Sandra L.</div>
+                <div class="text-gray-400 text-xs">Pontoon Owner, Lake Norman NC</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-navy-700 border border-white/8 rounded-2xl p-6 card-hover flex flex-col" data-reveal>
+            <div class="flex gap-1 mb-4">
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-5 flex-1">"I run a charter fishing operation with three
+              boats. MarineHaul built all three heavy-duty tri-axle trailers and services them annually. Zero issues in
+              four years of commercial use. These are the only people I trust with my equipment."</p>
+            <div class="flex items-center gap-3 mt-auto">
+              <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">DK
+              </div>
+              <div>
+                <div class="font-semibold text-white text-sm">David K.</div>
+                <div class="text-gray-400 text-xs">Charter Captain, Gulf Coast FL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="relative py-24 lg:py-36 cta-bg" aria-label="Call to action">
+      <div class="absolute inset-0 bg-navy/80"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-reveal>
+        <h2 class="font-display font-900 text-5xl lg:text-7xl text-white mb-6">
+          READY TO MOVE YOUR BOAT<br />
+          <span class="text-gradient-gold">WITH CONFIDENCE?</span>
+        </h2>
+        <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+          Whether you're buying your first trailer, upgrading your current rig, or need a full custom build — our team
+          is ready to help you get your boat on the road safely and reliably.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="home2.html"
+            class="btn-gold inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl text-base font-bold shadow-2xl shadow-gold/30">
+            View Products
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a href="contact.html"
+            class="btn-outline inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl text-base font-bold">
+            Contact Us
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <!-- FOOTER -->
+  <footer class="bg-navy border-t border-white/8" aria-label="Site footer">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <a href="index.html" class="flex items-center gap-3 mb-5">
+            <div
+              class="w-10 h-10 bg-gold-gradient rounded-lg flex items-center justify-center shadow-lg shadow-gold/20">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M2 18h20M4 18V10l4-3 4 3 4-3 4 3v8M8 18v-4h2v4M14 18v-4h2v4" stroke="#0a1628" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="6" cy="20" r="2" fill="#0a1628" />
+                <circle cx="18" cy="20" r="2" fill="#0a1628" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-display font-800 text-lg text-white">MARINEHAULPRO</span>
+              <span class="block text-[10px] text-gold/70 tracking-widest uppercase -mt-0.5">Trailer Sales &amp;
+                Service</span>
+            </div>
+          </a>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">Precision-engineered boat trailers, expert
+            repair, and custom fabrication. Serving serious boaters since 2006 with marine-grade quality that goes the
+            distance.</p>
+          <div class="flex gap-3">
+            <a href="#" aria-label="Facebook"
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram"
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube"
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#0a1628" />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn"
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h3>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="text-gray-400 hover:text-gold text-sm transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-gold text-sm transition-colors">About Us</a></li>
+            <li><a href="service.html" class="text-gray-400 hover:text-gold text-sm transition-colors">Service &amp;
+                Repair</a></li>
+            <li><a href="fabrication.html" class="text-gray-400 hover:text-gold text-sm transition-colors">Custom
+                Fabrication</a></li>
+            <li><a href="blog.html" class="text-gray-400 hover:text-gold text-sm transition-colors">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-gold text-sm transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Services</h3>
+          <ul class="space-y-2.5">
+            <li><a href="service.html#inspection"
+                class="text-gray-400 hover:text-gold text-sm transition-colors">Trailer Inspection</a></li>
+            <li><a href="service.html#brakes" class="text-gray-400 hover:text-gold text-sm transition-colors">Brake
+                Service</a></li>
+            <li><a href="service.html#bearings" class="text-gray-400 hover:text-gold text-sm transition-colors">Wheel
+                &amp; Bearing Service</a></li>
+            <li><a href="service.html#electrical"
+                class="text-gray-400 hover:text-gold text-sm transition-colors">Electrical Service</a></li>
+            <li><a href="fabrication.html" class="text-gray-400 hover:text-gold text-sm transition-colors">Custom
+                Fabrication</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Contact Us</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span class="text-gray-400 text-sm">(850) 742-9310</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span class="text-gray-400 text-sm">info@marinehaulpro.com</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-gray-400 text-sm">4821 Harbor Drive<br />Panama City, FL 32401</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div class="text-gray-400 text-sm">
+                <div>Mon–Fri: 8AM – 6PM</div>
+                <div>Saturday: 9AM – 4PM</div>
+                <div>Sunday: Closed</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-gray-500 text-xs">© 2026 MarineHaul Pro. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-gray-500 hover:text-gold text-xs transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-gold text-xs transition-colors">Terms &amp; Conditions</a>
+          <a href="#" class="text-gray-500 hover:text-gold text-xs transition-colors">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button id="back-to-top" aria-label="Back to top"
+    class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-xl btn-gold flex items-center justify-center shadow-2xl shadow-gold/30 opacity-0 pointer-events-none translate-y-4 transition-all duration-300">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

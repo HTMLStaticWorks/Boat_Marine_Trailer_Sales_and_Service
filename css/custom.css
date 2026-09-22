@@ -1,0 +1,331 @@
+/* =====================================================
+   MarineTrailer Pro — Custom CSS
+   Supplements Tailwind CSS 3 with custom utilities
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap');
+
+/* ---- Root Variables ---- */
+:root {
+  --navy: #0a1628;
+  --ocean: #0d1f3c;
+  --graphite: #1e2a3b;
+  --steel: #2d3f55;
+  --gold: #c9a84c;
+  --gold-light: #e8c76b;
+  --silver: #a8b4c0;
+  --off-white: #f5f2ee;
+  --light-steel: #e8edf2;
+  --font-primary: 'Inter', sans-serif;
+  --font-display: 'Barlow Condensed', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Typography ---- */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-light); }
+
+/* ---- Header Scroll Effect ---- */
+#main-header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+#main-header.header-scrolled {
+  background-color: rgba(10, 22, 40, 0.97) !important;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark #main-header.header-scrolled {
+  background-color: rgba(10, 22, 40, 0.98) !important;
+}
+
+.light #main-header.header-scrolled,
+html:not(.dark) #main-header.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+}
+
+/* ---- Nav Active ---- */
+.nav-active {
+  color: #c9a84c !important;
+  position: relative;
+}
+
+.nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #c9a84c;
+  border-radius: 1px;
+}
+
+/* ---- Gold Gradient Text ---- */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #c9a84c, #e8c76b, #c9a84c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Premium Gradient Backgrounds ---- */
+.bg-marine-gradient {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--ocean) 50%, var(--graphite) 100%);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #c9a84c, #e8c76b);
+}
+
+/* ---- Back to Top ---- */
+#back-to-top {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* RTL: Move back-to-top to left */
+[dir="rtl"] #back-to-top {
+  right: auto;
+  left: 1.5rem;
+}
+
+/* ---- Scroll Reveal ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Card Hover Lift ---- */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+/* ---- Image Zoom on Hover ---- */
+.img-zoom-wrap {
+  overflow: hidden;
+}
+.img-zoom-wrap img {
+  transition: transform 0.5s ease;
+}
+.img-zoom-wrap:hover img {
+  transform: scale(1.06);
+}
+
+/* ---- Gold Button ---- */
+.btn-gold {
+  background: linear-gradient(135deg, #c9a84c, #e8c76b);
+  color: #0a1628;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #b8943a, #d4b459);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(201,168,76,0.4);
+}
+
+/* ---- Outline Navy Button ---- */
+.btn-outline {
+  border: 2px solid #c9a84c;
+  color: #c9a84c;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: #c9a84c;
+  color: #0a1628;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(201,168,76,0.3);
+}
+
+/* ---- Product Card ---- */
+.product-card {
+  transition: all 0.35s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+
+/* ---- Hero Overlay ---- */
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(10,22,40,0.65) 0%, rgba(10,22,40,0.45) 50%, rgba(10,22,40,0.8) 100%);
+}
+
+/* ---- Section Divider ---- */
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #c9a84c, #e8c76b);
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Testimonial Quote Mark ---- */
+.quote-mark::before {
+  content: '"';
+  font-family: var(--font-display);
+  font-size: 5rem;
+  line-height: 1;
+  color: #c9a84c;
+  opacity: 0.3;
+  display: block;
+  margin-bottom: -1.5rem;
+}
+
+/* ---- Mobile Menu RTL ---- */
+[dir="rtl"] #mobile-menu {
+  right: auto;
+  left: 0;
+}
+[dir="rtl"] #mobile-menu.translate-x-full {
+  transform: translateX(-100%);
+}
+
+/* ---- Service Step Badge ---- */
+.step-badge {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c9a84c, #e8c76b);
+  color: #0a1628;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+  flex-shrink: 0;
+}
+
+/* ---- Blog Category Badge ---- */
+.category-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+
+/* ---- Map Container ---- */
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(201,168,76,0.3);
+}
+
+/* ---- Form Input Focus ---- */
+.form-input {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.form-input:focus {
+  border-color: #c9a84c;
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+  outline: none;
+}
+
+/* ---- Light Theme Overrides ---- */
+html:not(.dark) {
+  --bg-primary: #f5f2ee;
+  --bg-secondary: #e8edf2;
+  --text-primary: #0a1628;
+  --text-secondary: #2d3f55;
+}
+
+/* ---- Parallax Hero Effect ---- */
+.parallax-hero {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax-hero {
+    background-attachment: scroll;
+  }
+}
+
+/* ---- Custom Checkbox Styling ---- */
+.custom-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #c9a84c;
+  cursor: pointer;
+}
+
+/* ---- Hamburger Lines ---- */
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* ---- Product Filter Active ---- */
+.filter-btn.active {
+  background: linear-gradient(135deg, #c9a84c, #e8c76b);
+  color: #0a1628;
+  border-color: transparent;
+}
+
+/* ---- Noise Texture Overlay (subtle) ---- */
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.04;
+}
+
+/* ---- Responsive Utilities ---- */
+@media (max-width: 640px) {
+  .hero-headline {
+    font-size: 2.5rem !important;
+  }
+}
+
+/* ---- Selection Color ---- */
+::selection {
+  background: rgba(201,168,76,0.3);
+  color: #0a1628;
+}
+.dark ::selection {
+  background: rgba(201,168,76,0.3);
+  color: #f5f2ee;
+}
