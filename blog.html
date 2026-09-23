@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="dark">
 <head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marine Hub Blog — MarineHaul Pro</title>
@@ -69,7 +70,7 @@
 <body class="bg-navy dark:bg-navy text-gray-100 font-sans">
 
 <!-- HEADER -->
-<header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-navy/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+<header id="main-header" class="fixed top-0 w-full z-50 bg-navy/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-18 py-4">
 
@@ -85,7 +86,7 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-1" aria-label="Main Navigation">
+      <nav class="hidden xl:flex items-center gap-1" aria-label="Main Navigation">
         <a href="index.html" data-nav-link class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">Home</a>
         <a href="home2.html" data-nav-link class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">Home 2</a>
         <a href="about.html" data-nav-link class="px-3 py-2 text-sm font-medium text-gray-300 hover:text-gold transition-colors">About</a>
@@ -96,7 +97,7 @@
       </nav>
 
       <!-- Right Controls -->
-      <div class="hidden lg:flex items-center gap-2">
+      <div class="hidden xl:flex items-center gap-2">
         <button data-toggle-theme aria-label="Toggle theme" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200">
           <span data-theme-icon>☀️</span>
         </button>
@@ -107,10 +108,8 @@
       </div>
 
       <!-- Mobile Toggle -->
-      <div class="flex items-center gap-2 lg:hidden">
-        <button data-toggle-theme aria-label="Toggle theme" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 text-gray-300 transition-all">
-          <span data-theme-icon>☀️</span>
-        </button>
+      <div class="flex items-center gap-2 xl:hidden">
+        
         <button id="mobile-menu-toggle" aria-expanded="false" aria-label="Open menu" class="w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white transition-all">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -122,10 +121,10 @@
 </header>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden"></div>
+<div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 xl:hidden"></div>
 
 <!-- Mobile Menu Panel -->
-<div id="mobile-menu" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-navy-800 border-l border-white/10 z-50 translate-x-full transition-transform duration-300 lg:hidden overflow-y-auto">
+<div id="mobile-menu" class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-navy-800 border-l border-white/10 z-50 translate-x-full transition-transform duration-300 xl:hidden overflow-y-auto">
   <div class="p-6 flex flex-col flex-1">
     <div class="flex items-center justify-between mb-8">
       <a href="index.html" class="flex items-center gap-2">
@@ -226,9 +225,9 @@
               <span class="category-badge bg-blue-500/20 text-blue-400">Buying Guides</span>
               <span class="text-gray-500 text-xs">Aug 12, 2026</span>
             </div>
-            <h3 class="font-display font-700 text-xl text-white mb-3">How to Choose the Right Boat Trailer Capacity</h3>
+            <h3 class="font-display font-700 text-xl text-white mb-3 leading-7 min-h-[5.25rem]">How to Choose the Right Boat Trailer Capacity</h3>
             <p class="text-gray-400 text-sm mb-5 flex-1">Don't rely solely on the dry weight of your hull. Learn how to accurately calculate wet weight, gear, and fuel to ensure you buy a trailer that won't fail on the highway.</p>
-            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article <span>→</span></a>
+            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article</a>
           </div>
         </article>
         <!-- Article 2 -->
@@ -239,9 +238,9 @@
               <span class="category-badge bg-green-500/20 text-green-400">Maintenance</span>
               <span class="text-gray-500 text-xs">Sep 05, 2026</span>
             </div>
-            <h3 class="font-display font-700 text-xl text-white mb-3">When Should You Replace Trailer Bearings?</h3>
+            <h3 class="font-display font-700 text-xl text-white mb-3 leading-7 min-h-[5.25rem]">When Should You Replace Trailer Bearings?</h3>
             <p class="text-gray-400 text-sm mb-5 flex-1">Wheel bearings are the most common point of failure. Here are the 4 warning signs that your bearings need immediate replacement before your next trip.</p>
-            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article <span>→</span></a>
+            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article</a>
           </div>
         </article>
         <!-- Article 3 -->
@@ -252,9 +251,9 @@
               <span class="category-badge bg-red-500/20 text-red-400">Towing Safety</span>
               <span class="text-gray-500 text-xs">Sep 18, 2026</span>
             </div>
-            <h3 class="font-display font-700 text-xl text-white mb-3">Preparing Your Trailer for Long-Distance Towing</h3>
+            <h3 class="font-display font-700 text-xl text-white mb-3 leading-7 min-h-[5.25rem]">Preparing Your Trailer for Long-Distance Towing</h3>
             <p class="text-gray-400 text-sm mb-5 flex-1">Planning a trip across state lines? Follow this comprehensive checklist to prepare your trailer's tires, brakes, and electrical system for a 500+ mile journey.</p>
-            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article <span>→</span></a>
+            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article</a>
           </div>
         </article>
         <!-- Article 4 -->
@@ -265,9 +264,9 @@
               <span class="category-badge bg-yellow-500/20 text-yellow-400">Buying Guides</span>
               <span class="text-gray-500 text-xs">Aug 28, 2026</span>
             </div>
-            <h3 class="font-display font-700 text-xl text-white mb-3">Galvanized vs. Aluminum Trailer Frames: Which Lasts Longer?</h3>
+            <h3 class="font-display font-700 text-xl text-white mb-3 leading-7 min-h-[5.25rem]">Galvanized vs. Aluminum Trailer Frames: Which Lasts Longer?</h3>
             <p class="text-gray-400 text-sm mb-5 flex-1">Both materials promise corrosion resistance, but they behave very differently in saltwater environments. We compare cost, maintenance, longevity, and repair ease side by side.</p>
-            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article <span>→</span></a>
+            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article</a>
           </div>
         </article>
         <!-- Article 5 -->
@@ -278,9 +277,9 @@
               <span class="category-badge bg-purple-500/20 text-purple-400">Maintenance</span>
               <span class="text-gray-500 text-xs">Sep 10, 2026</span>
             </div>
-            <h3 class="font-display font-700 text-xl text-white mb-3">Trailer Lighting: How to Fix and Upgrade Your System</h3>
+            <h3 class="font-display font-700 text-xl text-white mb-3 leading-7 min-h-[5.25rem]">Trailer Lighting: How to Fix and Upgrade Your System</h3>
             <p class="text-gray-400 text-sm mb-5 flex-1">Faulty trailer lights are both illegal and dangerous. Learn how to diagnose wiring problems, replace submersible LED fixtures, and add a waterproof connector in one afternoon.</p>
-            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article <span>→</span></a>
+            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article</a>
           </div>
         </article>
         <!-- Article 6 -->
@@ -291,9 +290,9 @@
               <span class="category-badge bg-red-500/20 text-red-400">Towing Safety</span>
               <span class="text-gray-500 text-xs">Sep 22, 2026</span>
             </div>
-            <h3 class="font-display font-700 text-xl text-white mb-3">Boat Ramp Etiquette & Launch Day Safety Tips</h3>
+            <h3 class="font-display font-700 text-xl text-white mb-3 leading-7 min-h-[5.25rem]">Boat Ramp Etiquette & Launch Day Safety Tips</h3>
             <p class="text-gray-400 text-sm mb-5 flex-1">Busy launch ramps require preparation and awareness. Discover the unwritten rules of the boat ramp plus essential safety checks before you back into the water.</p>
-            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article <span>→</span></a>
+            <a href="#" class="text-gold font-semibold text-sm hover:underline inline-flex items-center gap-1">Read Article</a>
           </div>
         </article>
       </div>
@@ -342,16 +341,16 @@
         </a>
         <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xs">Precision-engineered boat trailers, expert repair, and custom fabrication. Serving serious boaters since 2006 with marine-grade quality that goes the distance.</p>
         <div class="flex gap-3">
-          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
           </a>
-          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/></svg>
           </a>
-          <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+          <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#0a1628"/></svg>
           </a>
-          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
         </div>
@@ -385,7 +384,7 @@
       <!-- Contact Info -->
       <div>
         <h3 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Contact Us</h3>
-        <ul class="space-y-3">
+        <ul class="space-y-3 lg:-ml-7">
           <li class="flex items-start gap-3">
             <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             <span class="text-gray-400 text-sm">(850) 742-9310</span>
@@ -401,8 +400,8 @@
           <li class="flex items-start gap-3">
             <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <div class="text-gray-400 text-sm">
-              <div>Mon–Fri: 8AM – 6PM</div>
-              <div>Saturday: 9AM – 4PM</div>
+              <div>Mon&ndash;Fri: 8AM&nbsp;&ndash;&nbsp;6PM</div>
+              <div>Saturday: 9AM&nbsp;&ndash;&nbsp;4PM</div>
               <div>Sunday: Closed</div>
             </div>
           </li>
@@ -432,3 +431,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+

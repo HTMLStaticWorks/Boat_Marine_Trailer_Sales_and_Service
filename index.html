@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr" class="dark">
 
 <head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MarineHaul Pro — Premium Boat Trailer Sales, Service & Custom Fabrication</title>
@@ -250,7 +251,7 @@
 
   <!-- HEADER -->
   <header id="main-header"
-    class="fixed top-0 left-0 right-0 z-50 bg-navy/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    class="fixed top-0 w-full z-50 bg-navy/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-18 py-4">
 
@@ -272,7 +273,7 @@
         </a>
 
         <!-- Desktop Nav -->
-        <nav class="hidden lg:flex items-center gap-1" aria-label="Main Navigation">
+        <nav class="hidden xl:flex items-center gap-1" aria-label="Main Navigation">
           <a href="index.html" data-nav-link
             class="px-3 py-2 text-sm font-medium text-gold transition-colors nav-active">Home</a>
           <a href="home2.html" data-nav-link
@@ -291,7 +292,7 @@
         </nav>
 
         <!-- Right Controls -->
-        <div class="hidden lg:flex items-center gap-2">
+        <div class="hidden xl:flex items-center gap-2">
           <button data-toggle-theme aria-label="Toggle theme"
             class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200">
             <span data-theme-icon>☀️</span>
@@ -305,11 +306,8 @@
         </div>
 
         <!-- Mobile Toggle -->
-        <div class="flex items-center gap-2 lg:hidden">
-          <button data-toggle-theme aria-label="Toggle theme"
-            class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 text-gray-300 transition-all">
-            <span data-theme-icon>☀️</span>
-          </button>
+        <div class="flex items-center gap-2 xl:hidden">
+          
           <button id="mobile-menu-toggle" aria-expanded="false" aria-label="Open menu"
             class="w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white transition-all">
             <span class="hamburger-line"></span>
@@ -322,11 +320,11 @@
   </header>
 
   <!-- Mobile Menu Overlay -->
-  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden"></div>
+  <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 xl:hidden"></div>
 
   <!-- Mobile Menu Panel -->
   <div id="mobile-menu"
-    class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-navy-800 border-l border-white/10 z-50 translate-x-full transition-transform duration-300 lg:hidden overflow-y-auto">
+    class="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-navy-800 border-l border-white/10 z-50 translate-x-full transition-transform duration-300 xl:hidden overflow-y-auto">
     <div class="p-6 flex flex-col flex-1">
       <div class="flex items-center justify-between mb-8">
         <a href="index.html" class="flex items-center gap-2">
@@ -480,7 +478,7 @@
               </div>
               <p class="text-gray-400 text-sm">Lightweight, corrosion-resistant frames for bass boats, aluminum hulls,
                 and center consoles up to 2,500 lbs.</p>
-              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range</div>
             </div>
           </a>
 
@@ -502,7 +500,7 @@
               </div>
               <p class="text-gray-400 text-sm">Wide-beam bunk systems with adjustable cradle support for 16-30 ft
                 pontoon boats up to 6,000 lbs.</p>
-              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range</div>
             </div>
           </a>
 
@@ -524,7 +522,7 @@
               </div>
               <p class="text-gray-400 text-sm">Dual-axle stability for longer hauls. Rated from 4,500 to 10,000 lbs with
                 hydraulic surge brakes.</p>
-              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range</div>
             </div>
           </a>
 
@@ -546,7 +544,7 @@
               </div>
               <p class="text-gray-400 text-sm">Commercial-grade tri-axle and gooseneck configurations for vessels
                 exceeding 10,000 lbs.</p>
-              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range →</div>
+              <div class="mt-auto text-gold text-xs font-semibold uppercase tracking-wider pt-4">View Range</div>
             </div>
           </a>
         </div>
@@ -555,11 +553,13 @@
 
     <!-- ===== WHY CHOOSE US ===== -->
     <section class="py-20 lg:py-28 bg-navy-700 relative overflow-hidden" aria-label="Why choose us">
-      <div class="absolute inset-0 bg-gradient-to-br from-gold/5 via-transparent to-transparent pointer-events-none">
-      </div>
+      <!-- Premium Dot Grid Pattern -->
+      <div class="absolute inset-0 opacity-15 pointer-events-none" style="background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 24px 24px;"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-navy-700/80 via-transparent to-navy-700/80 pointer-events-none"></div>
+      
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div data-reveal>
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div class="lg:col-span-7" data-reveal>
             <div class="section-divider"></div>
             <h2 class="font-display font-800 text-4xl lg:text-5xl text-white mb-6">WHY CHOOSE<br /><span
                 class="text-gradient-gold">MARINEHAULPRO?</span></h2>
@@ -657,8 +657,9 @@
             </div>
           </div>
 
-          <div class="relative" data-reveal>
-            <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <div class="relative lg:col-span-5" data-reveal>
+            <div class="rounded-2xl overflow-hidden shadow-2xl relative">
+              <div class="absolute inset-0 bg-gold/10 mix-blend-overlay"></div>
               <img src="https://images.pexels.com/photos/16477585/pexels-photo-16477585.jpeg"
                 alt="Marine trailer workshop with professional technicians inspecting trailer axle"
                 class="w-full h-[500px] object-cover" />
@@ -707,8 +708,7 @@
             <h2 class="font-display font-800 text-4xl lg:text-5xl text-white">FEATURED MODELS</h2>
             <p class="text-gray-400 mt-2">Our best-selling trailer configurations, ready for immediate delivery.</p>
           </div>
-          <a href="home2.html" class="btn-outline px-6 py-2.5 rounded-xl text-sm whitespace-nowrap">View All Trailers
-            →</a>
+          <a href="home2.html" class="btn-outline px-6 py-2.5 rounded-xl text-sm whitespace-nowrap">View All Trailers</a>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -816,7 +816,7 @@
                   <h3 class="font-display font-700 text-xl text-white">HeavyHaul 12000</h3>
                   <p class="text-gold/80 text-sm">Tri-Axle • Commercial Grade</p>
                 </div>
-                <span class="bg-blue-500/15 text-blue-400 text-xs font-bold px-3 py-1 rounded-full">Pro Series</span>
+                <span class="bg-blue-500/15 text-blue-400 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Pro Series</span>
               </div>
               <div class="grid grid-cols-2 gap-2 mb-4">
                 <div class="bg-white/4 rounded-lg p-2.5">
@@ -918,9 +918,6 @@
 
             <a href="service.html" class="btn-gold inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold">
               View All Services
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
             </a>
           </div>
         </div>
@@ -984,9 +981,6 @@
         <a href="fabrication.html"
           class="btn-gold inline-flex items-center gap-2 px-10 py-4 rounded-xl text-base font-bold shadow-2xl shadow-gold/30">
           Build Your Custom Trailer
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
         </a>
       </div>
     </section>
@@ -1030,8 +1024,7 @@
               trailer for my 24-foot Ranger. The fit is absolutely perfect — bunks land right where they should, loading
               is effortless. Three years in and it's still performing flawlessly. Outstanding craftsmanship."</p>
             <div class="flex items-center gap-3 mt-auto">
-              <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">RT
-              </div>
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="Robert T." class="w-10 h-10 rounded-full object-cover border-2 border-gold/20" />
               <div>
                 <div class="font-semibold text-white text-sm">Robert T.</div>
                 <div class="text-gray-400 text-xs">Bass Fishing Guide, Tennessee</div>
@@ -1068,8 +1061,7 @@
               like new. These guys clearly know marine trailers inside and out. Price was fair and turnaround was fast."
             </p>
             <div class="flex items-center gap-3 mt-auto">
-              <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">SL
-              </div>
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sandra L." class="w-10 h-10 rounded-full object-cover border-2 border-gold/20" />
               <div>
                 <div class="font-semibold text-white text-sm">Sandra L.</div>
                 <div class="text-gray-400 text-xs">Pontoon Owner, Lake Norman NC</div>
@@ -1078,7 +1070,7 @@
           </div>
 
           <!-- Testimonial 3 -->
-          <div class="bg-navy-700 border border-white/8 rounded-2xl p-6 card-hover flex flex-col" data-reveal>
+          <div class="bg-navy-700 border border-white/8 rounded-2xl p-6 card-hover flex flex-col md:col-span-2 md:w-[calc(50%-0.75rem)] md:mx-auto lg:col-span-1 lg:w-full lg:mx-0" data-reveal>
             <div class="flex gap-1 mb-4">
               <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20">
                 <path
@@ -1105,8 +1097,7 @@
               boats. MarineHaul built all three heavy-duty tri-axle trailers and services them annually. Zero issues in
               four years of commercial use. These are the only people I trust with my equipment."</p>
             <div class="flex items-center gap-3 mt-auto">
-              <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold font-bold">DK
-              </div>
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="David K." class="w-10 h-10 rounded-full object-cover border-2 border-gold/20" />
               <div>
                 <div class="font-semibold text-white text-sm">David K.</div>
                 <div class="text-gray-400 text-xs">Charter Captain, Gulf Coast FL</div>
@@ -1180,13 +1171,13 @@
             distance.</p>
           <div class="flex gap-3">
             <a href="#" aria-label="Facebook"
-              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
               </svg>
             </a>
             <a href="#" aria-label="Instagram"
-              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2" />
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2" />
@@ -1194,7 +1185,7 @@
               </svg>
             </a>
             <a href="#" aria-label="YouTube"
-              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
@@ -1202,7 +1193,7 @@
               </svg>
             </a>
             <a href="#" aria-label="LinkedIn"
-              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold/20 flex items-center justify-center text-gray-400 hover:text-gold transition-all duration-200">
+              class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
                 <circle cx="4" cy="4" r="2" />
@@ -1246,7 +1237,7 @@
         <!-- Contact Info -->
         <div>
           <h3 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">Contact Us</h3>
-          <ul class="space-y-3">
+          <ul class="space-y-3 lg:-ml-7">
             <li class="flex items-start gap-3">
               <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1268,7 +1259,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span class="text-gray-400 text-sm">4821 Harbor Drive<br />Panama City, FL 32401</span>
+              <span class="text-gray-400 text-sm">4821 Harbor Drive<br />Panama City, FL&nbsp;32401</span>
             </li>
             <li class="flex items-start gap-3">
               <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1276,8 +1267,8 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <div class="text-gray-400 text-sm">
-                <div>Mon–Fri: 8AM – 6PM</div>
-                <div>Saturday: 9AM – 4PM</div>
+                <div>Mon&ndash;Fri: 8AM&nbsp;&ndash;&nbsp;6PM</div>
+                <div>Saturday: 9AM&nbsp;&ndash;&nbsp;4PM</div>
                 <div>Sunday: Closed</div>
               </div>
             </li>
@@ -1309,3 +1300,4 @@
 </body>
 
 </html>
+
