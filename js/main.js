@@ -16,8 +16,10 @@
     const html = document.documentElement;
     if (theme === 'dark') {
       html.classList.add('dark');
+      html.classList.remove('light');
     } else {
       html.classList.remove('dark');
+      html.classList.add('light');
     }
     // Update toggle buttons
     document.querySelectorAll('[data-theme-icon]').forEach(function (el) {

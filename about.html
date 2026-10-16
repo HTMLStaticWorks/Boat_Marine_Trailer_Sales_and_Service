@@ -81,42 +81,380 @@
       background-color: rgba(0, 0, 0, 0.04) !important;
     }
 
-    /* Preserve white text on dark image backgrounds (Hero, CTA, etc) */
-    html:not(.dark) .preserve-white .text-white,
-    html:not(.dark) .hero-bg .text-white,
-    html:not(.dark) .cta-bg .text-white,
-    html:not(.dark) .service-bg .text-white,
-    html:not(.dark) .fab-bg .text-white,
-    html:not(.dark) section[style*="background-image"] .text-white {
+    /* Header Contrast in Light and Dark Modes */
+    html:not(.dark) #main-header,
+    html.light #main-header {
+      background-color: rgba(255, 255, 255, 0.98) !important;
+      border-bottom: 1px solid #e2e8f0 !important;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05) !important;
+    }
+    html:not(.dark) #main-header.header-scrolled,
+    html.light #main-header.header-scrolled {
+      background-color: rgba(255, 255, 255, 0.98) !important;
+      border-bottom: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08) !important;
+    }
+    html:not(.dark) #main-header nav a,
+    html.light #main-header nav a {
+      color: #334155 !important;
+      font-weight: 600 !important;
+    }
+    html:not(.dark) #main-header nav a:hover,
+    html.light #main-header nav a:hover,
+    html:not(.dark) #main-header nav a.nav-active,
+    html.light #main-header nav a.nav-active {
+      color: #c9a84c !important;
+    }
+    html:not(.dark) #main-header .font-display,
+    html.light #main-header .font-display,
+    html:not(.dark) #main-header .text-white,
+    html.light #main-header .text-white {
+      color: #0a1628 !important;
+    }
+    html:not(.dark) #main-header .text-gold\/80,
+    html:not(.dark) #main-header .text-gold\/70,
+    html.light #main-header .text-gold\/80,
+    html.light #main-header .text-gold\/70 {
+      color: #b8943a !important;
+    }
+    html:not(.dark) #main-header button[data-toggle-theme],
+    html:not(.dark) #main-header button[data-toggle-rtl],
+    html.light #main-header button[data-toggle-theme],
+    html.light #main-header button[data-toggle-rtl] {
+      background-color: rgba(0, 0, 0, 0.05) !important;
+      color: #1e293b !important;
+      border: 1px solid #cbd5e1 !important;
+    }
+    html:not(.dark) #main-header #mobile-menu-toggle,
+    html.light #main-header #mobile-menu-toggle {
+      background-color: rgba(0, 0, 0, 0.05) !important;
+      color: #0a1628 !important;
+      border: 1px solid #cbd5e1 !important;
+    }
+    html:not(.dark) #main-header .hamburger-line,
+    html.light #main-header .hamburger-line {
+      background-color: #0a1628 !important;
+    }
+
+    /* Floating Image Badges (Over Photos Only - Always Dark with Bright Text in Both Themes) */
+    .absolute.bg-navy-800\/90,
+    .absolute.bg-navy-800\/80,
+    .absolute.bg-navy-800\/95,
+    .img-zoom-wrap .bg-navy-800\/90,
+    .img-zoom-wrap .bg-navy-800\/80,
+    [class*="aspect-"] .bg-navy-800\/90,
+    [class*="aspect-"] .bg-navy-800\/80,
+    .relative.overflow-hidden .absolute.bg-navy-800\/90,
+    .relative.overflow-hidden .absolute.bg-navy-800\/80 {
+      background-color: rgba(13, 31, 60, 0.92) !important;
+      backdrop-filter: blur(8px);
+      color: #ffffff !important;
+    }
+    html:not(.dark) .absolute.bg-navy-800\/90,
+    html:not(.dark) .absolute.bg-navy-800\/80,
+    html:not(.dark) .img-zoom-wrap .bg-navy-800\/90,
+    html:not(.dark) [class*="aspect-"] .bg-navy-800\/90 {
       color: #ffffff !important;
     }
 
-    html:not(.dark) .preserve-white .text-gray-100,
-    html:not(.dark) .hero-bg .text-gray-100,
-    html:not(.dark) .cta-bg .text-gray-100,
-    html:not(.dark) .service-bg .text-gray-100,
-    html:not(.dark) .fab-bg .text-gray-100,
-    html:not(.dark) section[style*="background-image"] .text-gray-100 {
-      color: #f3f4f6 !important;
+    /* Fabrication Stage Panels in Light Mode (Image 3) */
+    html:not(.dark) .fab-stage-panel,
+    html.light .fab-stage-panel,
+    html:not(.dark) div[id^="fab-stage-"],
+    html.light div[id^="fab-stage-"] {
+      background-color: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+    }
+    html:not(.dark) .fab-stage-panel h3,
+    html.light .fab-stage-panel h3,
+    html:not(.dark) .fab-stage-panel h4,
+    html.light .fab-stage-panel h4,
+    html:not(.dark) .fab-stage-panel strong,
+    html.light .fab-stage-panel strong {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .fab-stage-panel p,
+    html.light .fab-stage-panel p {
+      color: #334155 !important;
+    }
+    html:not(.dark) .fab-stage-panel .text-gray-300,
+    html.light .fab-stage-panel .text-gray-300,
+    html:not(.dark) .fab-stage-panel .text-gray-400,
+    html.light .fab-stage-panel .text-gray-400 {
+      color: #475569 !important;
+    }
+    html:not(.dark) .fab-stage-panel .text-white,
+    html.light .fab-stage-panel .text-white {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .fab-stage-tab:not(.bg-gold),
+    html.light .fab-stage-tab:not(.bg-gold) {
+      background-color: #ffffff !important;
+      color: #334155 !important;
+      border: 1px solid #cbd5e1 !important;
+    }
+    html:not(.dark) .fab-stage-tab:not(.bg-gold) span:first-child,
+    html.light .fab-stage-tab:not(.bg-gold) span:first-child {
+      background-color: #f1f5f9 !important;
+      color: #334155 !important;
     }
 
-    html:not(.dark) .preserve-white .text-gray-300,
-    html:not(.dark) .hero-bg .text-gray-300,
-    html:not(.dark) .cta-bg .text-gray-300,
-    html:not(.dark) .service-bg .text-gray-300,
-    html:not(.dark) .fab-bg .text-gray-300,
-    html:not(.dark) section[style*="background-image"] .text-gray-300 {
-      color: #d1d5db !important;
+    /* Contact Turnaround Advice Banner in Light Mode (Image 5) */
+    html:not(.dark) .mt-12.bg-navy-800\/90,
+    html.light .mt-12.bg-navy-800\/90 {
+      background-color: #ffffff !important;
+      border: 1px solid #cbd5e1 !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    }
+    html:not(.dark) .mt-12.bg-navy-800\/90 h4,
+    html.light .mt-12.bg-navy-800\/90 h4 {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .mt-12.bg-navy-800\/90 p,
+    html.light .mt-12.bg-navy-800\/90 p {
+      color: #334155 !important;
+    }
+    html:not(.dark) .mt-12.bg-navy-800\/90 .text-white,
+    html.light .mt-12.bg-navy-800\/90 .text-white {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .mt-12.bg-navy-800\/90 .text-gray-300,
+    html.light .mt-12.bg-navy-800\/90 .text-gray-300 {
+      color: #334155 !important;
     }
 
-    html:not(.dark) .preserve-white .text-gray-400,
-    html:not(.dark) .hero-bg .text-gray-400,
-    html:not(.dark) .cta-bg .text-gray-400,
-    html:not(.dark) .service-bg .text-gray-400,
-    html:not(.dark) .fab-bg .text-gray-400,
-    html:not(.dark) section[style*="background-image"] .text-gray-400 {
-      color: #9ca3af !important;
+    /* Custom Quote & Newsletter Cards Inside .cta-bg in Light Mode (Images 1 & 4) */
+    html:not(.dark) .cta-bg .bg-navy\/90,
+    html.light .cta-bg .bg-navy\/90 {
+      background-color: #ffffff !important;
+      border: 1px solid #cbd5e1 !important;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08) !important;
     }
+    html:not(.dark) .cta-bg .bg-navy\/90 h2,
+    html.light .cta-bg .bg-navy\/90 h2 {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .cta-bg .bg-navy\/90 p,
+    html.light .cta-bg .bg-navy\/90 p {
+      color: #334155 !important;
+    }
+    html:not(.dark) .cta-bg .bg-navy\/90 .bg-navy-700,
+    html.light .cta-bg .bg-navy\/90 .bg-navy-700 {
+      background-color: #f8fafc !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+    html:not(.dark) .cta-bg .bg-navy\/90 .bg-navy-700 .text-white,
+    html.light .cta-bg .bg-navy\/90 .bg-navy-700 .text-white {
+      color: #0f172a !important;
+    }
+    html:not(.dark) .cta-bg .bg-navy\/90 .bg-navy-700 .text-gray-400,
+    html.light .cta-bg .bg-navy\/90 .bg-navy-700 .text-gray-400 {
+      color: #64748b !important;
+    }
+    html:not(.dark) .cta-bg .bg-navy\/90 input,
+    html.light .cta-bg .bg-navy\/90 input {
+      background-color: #f8fafc !important;
+      color: #0f172a !important;
+      border: 1px solid #cbd5e1 !important;
+    }
+    html:not(.dark) .cta-bg .bg-navy\/90 input::placeholder,
+    html.light .cta-bg .bg-navy\/90 input::placeholder {
+      color: #64748b !important;
+    }
+    html:not(.dark) .cta-bg .bg-navy\/90 .text-gray-600,
+    html.light .cta-bg .bg-navy\/90 .text-gray-600 {
+      color: #64748b !important;
+    }
+
+    /* Trailer Categories Section in Light Mode (Index lines 553-588) */
+    html:not(.dark) section[aria-label="Trailer categories"],
+    html.light section[aria-label="Trailer categories"] {
+      background-color: #f1f5f9 !important;
+    }
+    html:not(.dark) section[aria-label="Trailer categories"] h2,
+    html.light section[aria-label="Trailer categories"] h2 {
+      color: #0f172a !important;
+    }
+    html:not(.dark) section[aria-label="Trailer categories"] p,
+    html.light section[aria-label="Trailer categories"] p {
+      color: #334155 !important;
+    }
+    html:not(.dark) section[aria-label="Trailer categories"] .bg-navy-700,
+    html.light section[aria-label="Trailer categories"] .bg-navy-700 {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    }
+    html:not(.dark) section[aria-label="Trailer categories"] .bg-navy-700 h3,
+    html.light section[aria-label="Trailer categories"] .bg-navy-700 h3 {
+      color: #0f172a !important;
+    }
+    html:not(.dark) section[aria-label="Trailer categories"] .bg-navy-700 p,
+    html.light section[aria-label="Trailer categories"] .bg-navy-700 p {
+      color: #334155 !important;
+    }
+    html:not(.dark) section[aria-label="Trailer categories"] .bg-navy-700 strong,
+    html.light section[aria-label="Trailer categories"] .bg-navy-700 strong {
+      color: #0f172a !important;
+    }
+    html:not(.dark) section[aria-label="Trailer categories"] .bg-navy-700 .text-gray-400,
+    html.light section[aria-label="Trailer categories"] .bg-navy-700 .text-gray-400 {
+      color: #475569 !important;
+    }
+
+    /* =========================================================
+   HERO SECTIONS & DARK IMAGE BACKGROUNDS:
+   ALWAYS CRISP WHITE/LIGHT TEXT IN BOTH LIGHT & DARK MODES
+   ========================================================= */
+html:not(.dark) main > section:first-of-type,
+html.light main > section:first-of-type,
+html:not(.dark) .hero-bg,
+html.light .hero-bg,
+html:not(.dark) section[style*="background-image"],
+html.light section[style*="background-image"] {
+  color: #ffffff !important;
+}
+
+html:not(.dark) main > section:first-of-type h1,
+html.light main > section:first-of-type h1,
+html:not(.dark) main > section:first-of-type h2,
+html.light main > section:first-of-type h2,
+html:not(.dark) main > section:first-of-type h3,
+html.light main > section:first-of-type h3,
+html:not(.dark) main > section:first-of-type .text-white,
+html.light main > section:first-of-type .text-white,
+html:not(.dark) .hero-bg h1,
+html.light .hero-bg h1,
+html:not(.dark) .hero-bg h2,
+html.light .hero-bg h2,
+html:not(.dark) .hero-bg .text-white,
+html.light .hero-bg .text-white,
+html:not(.dark) section[style*="background-image"] h1,
+html.light section[style*="background-image"] h1,
+html:not(.dark) section[style*="background-image"] h2,
+html.light section[style*="background-image"] h2,
+html:not(.dark) section[style*="background-image"] .text-white,
+html.light section[style*="background-image"] .text-white,
+html:not(.dark) .preserve-white .text-white,
+html.light .preserve-white .text-white {
+  color: #ffffff !important;
+}
+
+html:not(.dark) main > section:first-of-type p,
+html.light main > section:first-of-type p,
+html:not(.dark) main > section:first-of-type .text-gray-100,
+html.light main > section:first-of-type .text-gray-100,
+html:not(.dark) main > section:first-of-type .text-gray-200,
+html.light main > section:first-of-type .text-gray-200,
+html:not(.dark) main > section:first-of-type .text-gray-300,
+html.light main > section:first-of-type .text-gray-300,
+html:not(.dark) .hero-bg p,
+html.light .hero-bg p,
+html:not(.dark) .hero-bg .text-gray-100,
+html.light .hero-bg .text-gray-100,
+html:not(.dark) .hero-bg .text-gray-200,
+html.light .hero-bg .text-gray-200,
+html:not(.dark) .hero-bg .text-gray-300,
+html.light .hero-bg .text-gray-300,
+html:not(.dark) section[style*="background-image"] p,
+html.light section[style*="background-image"] p,
+html:not(.dark) section[style*="background-image"] .text-gray-100,
+html.light section[style*="background-image"] .text-gray-100,
+html:not(.dark) section[style*="background-image"] .text-gray-200,
+html.light section[style*="background-image"] .text-gray-200,
+html:not(.dark) section[style*="background-image"] .text-gray-300,
+html.light section[style*="background-image"] .text-gray-300,
+html:not(.dark) section[style*="background-image"] .text-gray-400,
+html.light section[style*="background-image"] .text-gray-400,
+html:not(.dark) .preserve-white .text-gray-100,
+html.light .preserve-white .text-gray-100,
+html:not(.dark) .preserve-white .text-gray-200,
+html.light .preserve-white .text-gray-200,
+html:not(.dark) .preserve-white .text-gray-300,
+html.light .preserve-white .text-gray-300 {
+  color: #e2e8f0 !important;
+}
+
+/* Hero Stats/Badge cards on dark hero backgrounds */
+html:not(.dark) main > section:first-of-type .bg-navy-800\/80,
+html.light main > section:first-of-type .bg-navy-800\/80,
+html:not(.dark) main > section:first-of-type .bg-navy-800\/85,
+html.light main > section:first-of-type .bg-navy-800\/85,
+html:not(.dark) section[style*="background-image"] .bg-navy-800\/80,
+html.light section[style*="background-image"] .bg-navy-800\/80,
+html:not(.dark) section[style*="background-image"] .bg-navy-800\/85,
+html.light section[style*="background-image"] .bg-navy-800\/85 {
+  background-color: rgba(10, 22, 40, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+html:not(.dark) main > section:first-of-type .bg-navy-800\/80 .text-gray-300,
+html:not(.dark) main > section:first-of-type .bg-navy-800\/85 .text-gray-300,
+html:not(.dark) section[style*="background-image"] .bg-navy-800\/80 .text-gray-300,
+html:not(.dark) section[style*="background-image"] .bg-navy-800\/85 .text-gray-300 {
+  color: #cbd5e1 !important;
+}
+
+/* Full width Call to action section text */
+html:not(.dark) section[aria-label="Call to action"] h2,
+html.light section[aria-label="Call to action"] h2,
+html:not(.dark) section[aria-label="Call to action"] h2.text-white,
+html.light section[aria-label="Call to action"] h2.text-white {
+  color: #ffffff !important;
+}
+html:not(.dark) section[aria-label="Call to action"] p,
+html.light section[aria-label="Call to action"] p,
+html:not(.dark) section[aria-label="Call to action"] p.text-gray-300,
+html.light section[aria-label="Call to action"] p.text-gray-300 {
+  color: #e2e8f0 !important;
+}
+/* =========================================================
+   FLOATING PHOTO OVERLAYS & BADGES (Always dark with bright white text)
+   ========================================================= */
+html:not(.dark) .absolute.bg-navy\/85,
+html.light .absolute.bg-navy\/85,
+html:not(.dark) .absolute.bg-navy\/90,
+html.light .absolute.bg-navy\/90,
+html:not(.dark) .absolute.bg-navy-800\/90,
+html.light .absolute.bg-navy-800\/90,
+html:not(.dark) .absolute.bg-navy-800\/80,
+html.light .absolute.bg-navy-800\/80,
+html:not(.dark) .absolute[class*="bottom-"],
+html.light .absolute[class*="bottom-"] {
+  background-color: rgba(10, 22, 40, 0.88) !important;
+  color: #e2e8f0 !important;
+}
+
+html:not(.dark) .absolute.bg-navy\/85 strong,
+html.light .absolute.bg-navy\/85 strong,
+html:not(.dark) .absolute.bg-navy\/85 .text-white,
+html.light .absolute.bg-navy\/85 .text-white,
+html:not(.dark) .absolute.bg-navy\/90 strong,
+html.light .absolute.bg-navy\/90 strong,
+html:not(.dark) .absolute.bg-navy\/90 .text-white,
+html.light .absolute.bg-navy\/90 .text-white,
+html:not(.dark) .absolute.bg-navy-800\/90 strong,
+html.light .absolute.bg-navy-800\/90 strong,
+html:not(.dark) .absolute.bg-navy-800\/90 .text-white,
+html.light .absolute.bg-navy-800\/90 .text-white,
+html:not(.dark) .absolute[class*="bottom-"] strong,
+html.light .absolute[class*="bottom-"] strong,
+html:not(.dark) .absolute[class*="bottom-"] .text-white,
+html.light .absolute[class*="bottom-"] .text-white {
+  color: #ffffff !important;
+}
+
+html:not(.dark) .absolute.bg-navy\/85 .text-gray-200,
+html.light .absolute.bg-navy\/85 .text-gray-200,
+html:not(.dark) .absolute.bg-navy\/85 .text-gray-300,
+html.light .absolute.bg-navy\/85 .text-gray-300,
+html:not(.dark) .absolute[class*="bottom-"] .text-gray-200,
+html.light .absolute[class*="bottom-"] .text-gray-200,
+html:not(.dark) .absolute[class*="bottom-"] .text-gray-300,
+html.light .absolute[class*="bottom-"] .text-gray-300 {
+  color: #e2e8f0 !important;
+}
+    
 
     /* RTL Layout Fixes */
     html[dir="rtl"] {
@@ -360,9 +698,7 @@
           </div>
           <h1 class="font-display font-900 text-5xl lg:text-7xl text-white mb-6">THE MARINEHAULPRO<br /><span
               class="text-gradient-gold">STORY</span></h1>
-          <p class="text-xl text-gray-300 leading-relaxed">Eighteen years of building the trailers that get serious
-            boaters on the water — and back home safely. We're not a big box retailer. We're a specialist workshop built
-            around one passion: marine trailer excellence.</p>
+          <p class="text-lg sm:text-xl text-gray-200 leading-relaxed max-w-2xl mb-8">Eighteen years of building the trailers that get serious boaters on the water and back home safely. We're a specialist marine workshop built around one mission: premium trailer excellence.</p>
         </div>
       </div>
     </section>
@@ -415,8 +751,8 @@
                 alt="Single axle fishing boat trailer on boat ramp" class="w-full h-full object-cover" loading="lazy" />
             </div>
             <div class="p-6 flex flex-col flex-1">
-              <h3 class="font-display font-700 text-xl text-white mb-2">Single Axle Trailers</h3>
-              <p class="text-gray-400 text-sm leading-relaxed">Lightweight, maneuverable, and purpose-built for boats
+              <h3 class="font-display font-700 text-xl text-white mb-2 min-h-[3.25rem] flex items-center">Single Axle Trailers</h3>
+              <p class="text-gray-400 text-sm leading-relaxed min-h-[4.5rem]">Lightweight, maneuverable, and purpose-built for boats
                 under 22 ft. Our single axle designs maximize fuel efficiency and ramp access.</p>
             </div>
           </div>
@@ -426,19 +762,19 @@
                 alt="Tandem axle pontoon trailer on marina access road" class="w-full h-full object-cover"
                 loading="lazy" /></div>
             <div class="p-6 flex flex-col flex-1">
-              <h3 class="font-display font-700 text-xl text-white mb-2">Tandem Axle Trailers</h3>
-              <p class="text-gray-400 text-sm leading-relaxed">The workhorse configuration for 22–32 ft boats. Superior
+              <h3 class="font-display font-700 text-xl text-white mb-2 min-h-[3.25rem] flex items-center">Tandem Axle Trailers</h3>
+              <p class="text-gray-400 text-sm leading-relaxed min-h-[4.5rem]">The workhorse configuration for 22–32 ft boats. Superior
                 load stability, hydraulic surge brakes, and marine-grade galvanized frames as standard.</p>
             </div>
           </div>
-          <div class="bg-navy-700 rounded-2xl overflow-hidden border border-white/8 card-hover md:col-span-2 md:w-[calc(50%-0.75rem)] md:mx-auto lg:col-span-1 lg:w-full lg:mx-0" data-reveal>
+          <div class="bg-navy-700 rounded-2xl overflow-hidden border border-white/8 card-hover md:col-span-2 md:max-w-md md:mx-auto lg:col-span-1 lg:max-w-none lg:w-full" data-reveal>
             <div class="img-zoom-wrap aspect-video"><img
                 src="https://images.pexels.com/photos/3823440/pexels-photo-3823440.jpeg"
                 alt="Custom fabricated heavy duty boat trailer frame in workshop" class="w-full h-full object-cover"
                 loading="lazy" /></div>
             <div class="p-6 flex flex-col flex-1">
-              <h3 class="font-display font-700 text-xl text-white mb-2">Custom Fabricated Trailers</h3>
-              <p class="text-gray-400 text-sm leading-relaxed">For boats that don't fit standard configurations. We
+              <h3 class="font-display font-700 text-xl text-white mb-2 min-h-[3.25rem] flex items-center">Custom Fabricated Trailers</h3>
+              <p class="text-gray-400 text-sm leading-relaxed min-h-[4.5rem]">For boats that don't fit standard configurations. We
                 design and build from raw material, custom to your boat's hull profile, weight, and use case.</p>
             </div>
           </div>
@@ -702,9 +1038,8 @@
             <a href="#" aria-label="YouTube"
               class="w-9 h-9 rounded-lg bg-white/5 hover:bg-gold flex items-center justify-center text-gray-400 hover:text-navy hover:-translate-y-1 hover:shadow-lg hover:shadow-gold/30 transition-all duration-300">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z" />
-                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#0a1628" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
             </a>
             <a href="#" aria-label="LinkedIn"
