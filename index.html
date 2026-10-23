@@ -669,8 +669,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             <span data-theme-icon>☀️</span>
           </button>
           <button data-toggle-rtl aria-label="Toggle RTL"
-            class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200 font-mono text-xs font-bold">
-            <span data-rtl-icon>⇄</span>
+            class="px-2.5 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200 text-xs font-bold tracking-wider">
+            <span data-rtl-label>RTL</span>
           </button>
           <a href="signup.html"
             class="btn-gold px-5 py-2 text-sm rounded-lg font-bold shadow-lg shadow-gold/20">Signup</a>
@@ -741,14 +741,14 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
           class="btn-gold flex items-center justify-center w-full px-5 py-3 rounded-xl font-bold text-navy">Signup</a>
         <div class="flex gap-2 pt-2">
           <button data-toggle-rtl
-            class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+            class="px-3.5 py-2.5 flex items-center justify-center gap-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors whitespace-nowrap flex-shrink-0">
             <span data-rtl-icon>⇄</span>
             <span data-rtl-label>RTL</span>
           </button>
           <button data-toggle-theme
-            class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+            class="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors whitespace-nowrap">
             <span data-theme-icon>☀️</span>
-            <span data-theme-label>Light Mode</span>
+            <span data-theme-label class="whitespace-nowrap">Light Mode</span>
           </button>
         </div>
       </div>
@@ -784,20 +784,20 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </p>
             <div class="flex flex-col sm:flex-row gap-4" data-reveal>
               <a href="home2.html"
-                class="btn-gold inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-gold/25">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                class="btn-gold inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-base font-bold shadow-xl shadow-gold/25 whitespace-nowrap">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M4 6h16M4 10h16M4 14h16M4 18h16" />
                 </svg>
-                Explore Trailers
+                <span>Explore Trailers</span>
               </a>
               <a href="contact.html"
-                class="btn-outline inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                class="btn-outline inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-base font-bold whitespace-nowrap">
+                <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                Request a Quote
+                <span>Request a Quote</span>
               </a>
             </div>
 
@@ -905,14 +905,14 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
               </div>
             </div>
             <div class="p-5 flex flex-col flex-1">
-              <div class="flex items-center justify-between mb-2 min-h-[3.25rem]">
-                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Fishing &amp; Skiff Trailers</h3>
-                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+              <div class="category-heading-wrap flex items-start justify-between mb-2 min-h-[3.75rem]">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors leading-tight">Fishing &amp; Skiff Trailers</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity mt-1 flex-shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </div>
-              <p class="text-gray-300 text-sm mb-3 min-h-[4rem]">Lightweight, corrosion-resistant extruded frames for bass boats, skiffs, and aluminum jon boats up to 3,000 lbs.</p>
+              <p class="category-subtext text-gray-300 text-sm mb-3 min-h-[4.75rem]">Lightweight, corrosion-resistant extruded frames for bass boats, skiffs, and aluminum jon boats up to 3,000 lbs.</p>
               <div class="text-xs text-gray-400 space-y-1 mb-4">
                 <div>• <strong class="text-white">Variants:</strong> Bunk or Keel-Roller</div>
                 <div>• <strong class="text-white">Financing:</strong> From $59 / Month</div>
@@ -939,14 +939,14 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
               </div>
             </div>
             <div class="p-5 flex flex-col flex-1">
-              <div class="flex items-center justify-between mb-2 min-h-[3.25rem]">
-                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Pontoon &amp; Tritoon Rigs</h3>
-                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+              <div class="category-heading-wrap flex items-start justify-between mb-2 min-h-[3.75rem]">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors leading-tight">Pontoon &amp; Tritoon Rigs</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity mt-1 flex-shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </div>
-              <p class="text-gray-300 text-sm mb-3 min-h-[4rem]">Wide-beam float-on and center tube cradle rigs with welded bow stairs and handrail for 2 &amp; 3-log crafts up to 8,000 lbs.</p>
+              <p class="category-subtext text-gray-300 text-sm mb-3 min-h-[4.75rem]">Wide-beam float-on and center tube cradle rigs with welded bow stairs and handrail for 2 &amp; 3-log crafts up to 8,000 lbs.</p>
               <div class="text-xs text-gray-400 space-y-1 mb-4">
                 <div>• <strong class="text-white">Variants:</strong> Dual-Tube vs Tri-Tube</div>
                 <div>• <strong class="text-white">Financing:</strong> From $109 / Month</div>
@@ -973,14 +973,14 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
               </div>
             </div>
             <div class="p-5 flex flex-col flex-1">
-              <div class="flex items-center justify-between mb-2 min-h-[3.25rem]">
-                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Tandem Axle Trailers</h3>
-                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+              <div class="category-heading-wrap flex items-start justify-between mb-2 min-h-[3.75rem]">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors leading-tight">Tandem Axle Trailers</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity mt-1 flex-shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </div>
-              <p class="text-gray-300 text-sm mb-3 min-h-[4rem]">High-speed highway stability for center consoles and deck boats. Rated from 5,000 to 10,000 lbs with all-wheel surge disc brakes.</p>
+              <p class="category-subtext text-gray-300 text-sm mb-3 min-h-[4.75rem]">High-speed highway stability for center consoles and deck boats. Rated from 5,000 to 10,000 lbs with all-wheel surge disc brakes.</p>
               <div class="text-xs text-gray-400 space-y-1 mb-4">
                 <div>• <strong class="text-white">Variants:</strong> Aluminum I-Beam / Galv.</div>
                 <div>• <strong class="text-white">Financing:</strong> From $125 / Month</div>
@@ -1007,14 +1007,14 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
               </div>
             </div>
             <div class="p-5 flex flex-col flex-1">
-              <div class="flex items-center justify-between mb-2 min-h-[3.25rem]">
-                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors">Commercial &amp; Tri-Axle</h3>
-                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+              <div class="category-heading-wrap flex items-start justify-between mb-2 min-h-[3.75rem]">
+                <h3 class="font-display font-700 text-xl text-white group-hover:text-gold transition-colors leading-tight">Commercial &amp; Tri-Axle</h3>
+                <svg class="w-5 h-5 text-gold opacity-0 group-hover:opacity-100 transition-opacity mt-1 flex-shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </div>
-              <p class="text-gray-300 text-sm mb-3 min-h-[4rem]">Commercial tri-axle, quad-axle, and gooseneck configurations for offshore sportfishers and heavy cabin cruisers up to 22,000 lbs.</p>
+              <p class="category-subtext text-gray-300 text-sm mb-3 min-h-[4.75rem]">Commercial tri-axle, quad-axle, and gooseneck configurations for offshore sportfishers and heavy cabin cruisers up to 22,000 lbs.</p>
               <div class="text-xs text-gray-400 space-y-1 mb-4">
                 <div>• <strong class="text-white">Variants:</strong> EOH Brakes / Gooseneck</div>
                 <div>• <strong class="text-white">Financing:</strong> From $245 / Month</div>
@@ -1187,25 +1187,25 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         </div>
 
         <!-- Interactive Inventory Filter Tabs -->
-        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-12" data-reveal>
+        <div class="trailer-filter-container flex flex-wrap items-center justify-center gap-2.5 mb-12" data-reveal>
           <button type="button" onclick="filterTrailerModels('all', this)"
-            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-gold text-navy shadow-md shadow-gold/20">
+            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-gold text-navy shadow-md shadow-gold/20 whitespace-nowrap">
             All Models (6)
           </button>
           <button type="button" onclick="filterTrailerModels('single', this)"
-            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white">
+            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white whitespace-nowrap">
             Single Axle (Up to 3,500 lbs)
           </button>
           <button type="button" onclick="filterTrailerModels('tandem', this)"
-            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white">
+            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white whitespace-nowrap">
             Tandem Axle (Up to 10,000 lbs)
           </button>
           <button type="button" onclick="filterTrailerModels('commercial', this)"
-            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white">
+            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white whitespace-nowrap">
             Tri-Axle / Commercial (12k+ lbs)
           </button>
           <button type="button" onclick="filterTrailerModels('pontoon', this)"
-            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white">
+            class="trailer-filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 bg-navy-800 text-gray-300 border border-white/10 hover:border-gold/40 hover:text-white whitespace-nowrap">
             Pontoon &amp; Tritoon Rigs
           </button>
         </div>
@@ -1228,11 +1228,11 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
             <div class="p-6 flex flex-col flex-1">
               <div class="flex items-start justify-between mb-2">
-                <div class="min-h-[4rem] flex flex-col justify-center">
-                  <h3 class="font-display font-700 text-2xl text-white">ProAngler 2500</h3>
-                  <p class="text-gold text-xs font-semibold">Financing: From $69 / Month • 0% Down</p>
+                <div class="flex-1 min-w-0 pr-3">
+                  <h3 class="font-display font-700 text-2xl text-white leading-tight min-h-[4.25rem] flex items-start">ProAngler 2500</h3>
+                  <p class="text-gold text-xs font-semibold min-h-[2.5rem] flex items-start">Financing: From $69 / Month • 0% Down</p>
                 </div>
-                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">In Stock</span>
+                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0">In Stock</span>
               </div>
               
               <div class="grid grid-cols-2 gap-2 mb-4 mt-2">
@@ -1292,11 +1292,11 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
             <div class="p-6 flex flex-col flex-1">
               <div class="flex items-start justify-between mb-2">
-                <div class="min-h-[4rem] flex flex-col justify-center">
-                  <h3 class="font-display font-700 text-2xl text-white">PontoonMaster 6500</h3>
-                  <p class="text-gold text-xs font-semibold">Financing: From $119 / Month • On-Site Approval</p>
+                <div class="flex-1 min-w-0 pr-3">
+                  <h3 class="font-display font-700 text-2xl text-white leading-tight min-h-[4.25rem] flex items-start">PontoonMaster 6500</h3>
+                  <p class="text-gold text-xs font-semibold min-h-[2.5rem] flex items-start">Financing: From $119 / Month • On-Site Approval</p>
                 </div>
-                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">Popular</span>
+                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0">Popular</span>
               </div>
               
               <div class="grid grid-cols-2 gap-2 mb-4 mt-2">
@@ -1356,11 +1356,11 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
             <div class="p-6 flex flex-col flex-1">
               <div class="flex items-start justify-between mb-2">
-                <div class="min-h-[4rem] flex flex-col justify-center">
-                  <h3 class="font-display font-700 text-2xl text-white">LakeRunner Pro 5500</h3>
-                  <p class="text-gold text-xs font-semibold">Financing: From $129 / Month • Instant Pre-Qual</p>
+                <div class="flex-1 min-w-0 pr-3">
+                  <h3 class="font-display font-700 text-2xl text-white leading-tight min-h-[4.25rem] flex items-start">LakeRunner Pro 5500</h3>
+                  <p class="text-gold text-xs font-semibold min-h-[2.5rem] flex items-start">Financing: From $129 / Month • Instant Pre-Qual</p>
                 </div>
-                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">Bestseller</span>
+                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0">Bestseller</span>
               </div>
               
               <div class="grid grid-cols-2 gap-2 mb-4 mt-2">
@@ -1420,11 +1420,11 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
             <div class="p-6 flex flex-col flex-1">
               <div class="flex items-start justify-between mb-2">
-                <div class="min-h-[4rem] flex flex-col justify-center">
-                  <h3 class="font-display font-700 text-2xl text-white">CoastalHaul 8500</h3>
-                  <p class="text-gold text-xs font-semibold">Financing: From $175 / Month • Low APR</p>
+                <div class="flex-1 min-w-0 pr-3">
+                  <h3 class="font-display font-700 text-2xl text-white leading-tight min-h-[4.25rem] flex items-start">CoastalHaul 8500</h3>
+                  <p class="text-gold text-xs font-semibold min-h-[2.5rem] flex items-start">Financing: From $175 / Month • Low APR</p>
                 </div>
-                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">In Stock</span>
+                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0">In Stock</span>
               </div>
               
               <div class="grid grid-cols-2 gap-2 mb-4 mt-2">
@@ -1484,11 +1484,11 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
             <div class="p-6 flex flex-col flex-1">
               <div class="flex items-start justify-between mb-2">
-                <div class="min-h-[4rem] flex flex-col justify-center">
-                  <h3 class="font-display font-700 text-2xl text-white">HeavyHaul 15000 Commercial</h3>
-                  <p class="text-gold text-xs font-semibold">Financing: From $285 / Month • Commercial Lease</p>
+                <div class="flex-1 min-w-0 pr-3">
+                  <h3 class="font-display font-700 text-2xl text-white leading-tight min-h-[4.25rem] flex items-start">HeavyHaul 15000 Commercial</h3>
+                  <p class="text-gold text-xs font-semibold min-h-[2.5rem] flex items-start">Financing: From $285 / Month • Commercial Lease</p>
                 </div>
-                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">Pro Series</span>
+                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0">Pro Series</span>
               </div>
               
               <div class="grid grid-cols-2 gap-2 mb-4 mt-2">
@@ -1548,11 +1548,11 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
             <div class="p-6 flex flex-col flex-1">
               <div class="flex items-start justify-between mb-2">
-                <div class="min-h-[4rem] flex flex-col justify-center">
-                  <h3 class="font-display font-700 text-2xl text-white">StealthAngler 3200</h3>
-                  <p class="text-gold text-xs font-semibold">Financing: From $89 / Month • Instant Approval</p>
+                <div class="flex-1 min-w-0 pr-3">
+                  <h3 class="font-display font-700 text-2xl text-white leading-tight min-h-[4.25rem] flex items-start">StealthAngler 3200</h3>
+                  <p class="text-gold text-xs font-semibold min-h-[2.5rem] flex items-start">Financing: From $89 / Month • Instant Approval</p>
                 </div>
-                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">In Stock</span>
+                <span class="bg-gold/15 border border-gold/30 text-gold text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0">In Stock</span>
               </div>
               
               <div class="grid grid-cols-2 gap-2 mb-4 mt-2">

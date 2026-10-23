@@ -134,8 +134,49 @@ html:not(.dark) #main-header button[data-toggle-rtl],
 html.light #main-header button[data-toggle-theme],
 html.light #main-header button[data-toggle-rtl] {
   background-color: rgba(0, 0, 0, 0.05) !important;
-  color: #1e293b !important;
+  color: #0a1628 !important;
   border: 1px solid #cbd5e1 !important;
+}
+
+/* Ensure Theme Toggle and RTL buttons are always strictly single line */
+button[data-toggle-theme],
+button[data-toggle-rtl],
+[data-theme-label],
+[data-rtl-label] {
+  white-space: nowrap !important;
+}
+
+#mobile-menu button[data-toggle-rtl] {
+  flex: 0 0 auto !important;
+  padding-left: 0.875rem !important;
+  padding-right: 0.875rem !important;
+  white-space: nowrap !important;
+}
+
+#mobile-menu button[data-toggle-theme] {
+  flex: 1 1 auto !important;
+  white-space: nowrap !important;
+}
+
+html:not(.dark) #main-header button[data-toggle-theme]:hover,
+html:not(.dark) #main-header button[data-toggle-rtl]:hover,
+html.light #main-header button[data-toggle-theme]:hover,
+html.light #main-header button[data-toggle-rtl]:hover,
+html:not(.dark) button[data-toggle-rtl]:hover,
+html.light button[data-toggle-rtl]:hover {
+  background-color: #0a1628 !important;
+  color: #c9a84c !important;
+  border-color: #0a1628 !important;
+  box-shadow: 0 4px 12px rgba(10, 22, 40, 0.25) !important;
+}
+
+html:not(.dark) #main-header button[data-toggle-theme]:hover span,
+html:not(.dark) #main-header button[data-toggle-rtl]:hover span,
+html.light #main-header button[data-toggle-theme]:hover span,
+html.light #main-header button[data-toggle-rtl]:hover span,
+html:not(.dark) button[data-toggle-rtl]:hover span,
+html.light button[data-toggle-rtl]:hover span {
+  color: #c9a84c !important;
 }
 
 html:not(.dark) #main-header #mobile-menu-toggle,
@@ -174,6 +215,20 @@ html.dark #main-header #mobile-menu-toggle {
   background-color: rgba(255, 255, 255, 0.08) !important;
   color: #cbd5e1 !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+html.dark #main-header button[data-toggle-theme]:hover,
+html.dark #main-header button[data-toggle-rtl]:hover,
+html.dark button[data-toggle-rtl]:hover {
+  background-color: rgba(201, 168, 76, 0.2) !important;
+  color: #c9a84c !important;
+  border-color: rgba(201, 168, 76, 0.5) !important;
+}
+
+html.dark #main-header button[data-toggle-theme]:hover span,
+html.dark #main-header button[data-toggle-rtl]:hover span,
+html.dark button[data-toggle-rtl]:hover span {
+  color: #c9a84c !important;
 }
 
 html.dark #main-header .hamburger-line {
@@ -592,6 +647,103 @@ html:not(.dark) .trailer-model-card h3 {
   color: #0f172a !important;
 }
 
+/* =====================================================
+   7) & 8) CARD HEADINGS AND SUBTEXT BASELINE ALIGNMENT
+   ===================================================== */
+/* 7) Category Cards (TRAILER TYPES & PRICING OVERVIEW) */
+.category-heading-wrap,
+section[aria-label="Trailer categories"] .flex.items-start.justify-between.mb-2 {
+  min-height: 3.75rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.category-heading-wrap h3,
+section[aria-label="Trailer categories"] h3 {
+  line-height: 1.25 !important;
+  margin: 0 !important;
+}
+
+.category-subtext,
+section[aria-label="Trailer categories"] p.text-gray-300 {
+  min-height: 4.75rem !important;
+}
+
+/* 8) Featured Trailer Model Cards */
+.trailer-model-card h3 {
+  min-height: 4.25rem !important;
+  line-height: 1.25 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  margin: 0 0 0.25rem 0 !important;
+}
+
+.trailer-model-card p.text-gold {
+  min-height: 2.5rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+}
+
+/* 10) Custom Advantage Cards (fabrication.html) */
+.custom-advantage-card h3 {
+  min-height: 4.5rem !important;
+  line-height: 1.25 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.custom-advantage-card p {
+  min-height: 6.5rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* 11) Custom Build Showcase Cards (fabrication.html) */
+.custom-build-card h3 {
+  min-height: 4.25rem !important;
+  line-height: 1.25 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.custom-build-card p {
+  min-height: 5.5rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Facility Cards (contact.html) */
+.facility-card h3 {
+  min-height: 4rem !important;
+  line-height: 1.25 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.facility-card p {
+  min-height: 5.5rem !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 1rem !important;
+}
+
+.trailer-model-card .bg-white\/4 {
+  min-height: 6.75rem;
+}
+
+.trailer-model-card .border-t.border-white\/8 {
+  min-height: 3.25rem;
+}
+
 html:not(.dark) .trailer-model-card .bg-navy\/60 {
   background-color: #f8fafc !important;
   border-color: #e2e8f0 !important;
@@ -619,6 +771,102 @@ html:not(.dark) .trailer-filter-btn:not(.bg-gold) {
   background-color: #ffffff !important;
   color: #475569 !important;
   border-color: #cbd5e1 !important;
+}
+
+/* =====================================================
+   13) CTA TEXT STRICTLY SINGLE LINE IN MOBILE VIEW
+   ===================================================== */
+.btn-gold,
+.btn-outline,
+.btn-primary,
+a[class*="btn-"],
+button[class*="btn-"],
+.hero-cta-btn {
+  white-space: nowrap !important;
+}
+
+/* =====================================================
+   14) UNIFORM LABEL LENGTH FOR TRAILER FILTER TABS (MOB VIEW)
+   ===================================================== */
+@media (max-width: 639px) {
+  .trailer-filter-container,
+  #featured-trailers .flex.flex-wrap.items-center.justify-center {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 0.625rem !important;
+  }
+
+  .trailer-filter-container .trailer-filter-btn,
+  #featured-trailers .trailer-filter-btn {
+    width: 100% !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* =====================================================
+   15) UNIFORM LABEL LENGTH FOR BRAND PILLS (MOB & TAB VIEW)
+   ===================================================== */
+@media (max-width: 1023px) {
+  .hero2-brand-pills {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    gap: 0.625rem !important;
+    margin-top: 2rem !important;
+    padding-top: 2rem !important;
+  }
+
+  .hero2-brand-pills span {
+    width: 100% !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0.625rem 1rem !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* =====================================================
+   16) SERVICE WORKSHOP TEXT VISIBILITY (HOME2)
+   ===================================================== */
+[aria-label="Service workshop"] [data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+[aria-label="Service workshop"] h2,
+[aria-label="Service workshop"] p,
+[aria-label="Service workshop"] span,
+[aria-label="Service workshop"] div {
+  visibility: visible !important;
+}
+
+/* Service Workshop Badge Text Contrast */
+.service-workshop-badge,
+[aria-label="Service workshop"] .bg-gold {
+  background-color: #c9a84c !important;
+  color: #0a1628 !important;
+}
+
+.service-workshop-badge *,
+[aria-label="Service workshop"] .bg-gold * {
+  color: #0a1628 !important;
+  opacity: 1 !important;
 }
 
 /* Dark Mode Contrast for Available Section */

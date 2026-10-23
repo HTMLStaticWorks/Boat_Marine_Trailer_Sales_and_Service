@@ -471,8 +471,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         <button data-toggle-theme aria-label="Toggle theme" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200">
           <span data-theme-icon>☀️</span>
         </button>
-        <button data-toggle-rtl aria-label="Toggle RTL" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200 font-mono text-xs font-bold">
-          <span data-rtl-icon>⇄</span>
+        <button data-toggle-rtl aria-label="Toggle RTL" class="px-2.5 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200 text-xs font-bold tracking-wider">
+          <span data-rtl-label>RTL</span>
         </button>
         <a href="signup.html" class="btn-gold px-5 py-2 text-sm rounded-lg font-bold shadow-lg shadow-gold/20">Signup</a>
       </div>
@@ -528,13 +528,13 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
     <div class="space-y-3">
       <a href="signup.html" class="btn-gold flex items-center justify-center w-full px-5 py-3 rounded-xl font-bold text-navy">Signup</a>
       <div class="flex gap-2 pt-2">
-        <button data-toggle-rtl class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+        <button data-toggle-rtl class="px-3.5 py-2.5 flex items-center justify-center gap-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors whitespace-nowrap flex-shrink-0">
           <span data-rtl-icon>⇄</span>
           <span data-rtl-label>RTL</span>
         </button>
-        <button data-toggle-theme class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+        <button data-toggle-theme class="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors whitespace-nowrap">
           <span data-theme-icon>☀️</span>
-          <span data-theme-label>Light Mode</span>
+          <span data-theme-label class="whitespace-nowrap">Light Mode</span>
         </button>
       </div>
     </div>
@@ -549,42 +549,42 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
     <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 24px 24px;"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" data-reveal>
-      <div class="max-w-3xl">
+      <div class="max-w-3xl mx-auto text-center">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-bold uppercase tracking-wider mb-6">
           <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
           Certified Marine Aluminum &amp; Steel Fabrication Facility
         </div>
         <h1 class="font-display font-900 text-5xl lg:text-7xl text-white mb-6">CUSTOM TRAILER<br /><span
             class="text-gradient-gold">FABRICATION &amp; RIGGING</span></h1>
-        <p class="text-lg sm:text-xl text-gray-200 leading-relaxed max-w-2xl mb-8">
+        <p class="text-lg sm:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto mb-8">
           When off-the-shelf won't cut it. We engineer, CNC plasma-cut, and AWS TIG/MIG weld custom marine boat trailers engineered to your vessel's exact deadrise, strake geometry, and center-of-gravity.
         </p>
         
         <!-- Key Value Stats Pills -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">🛡️ 6061-T6</div>
-            <div class="text-gray-300 text-xs">Marine Grade Aluminum</div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8 items-stretch">
+          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">🛡️ 6061-T6</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Marine Grade Aluminum</div>
           </div>
-          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">⚡ AWS D1.1/D1.2</div>
-            <div class="text-gray-300 text-xs">Certified Master Welders</div>
+          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">⚡ AWS D1.1/D1.2</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Certified Master Welders</div>
           </div>
-          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">📐 100% CAD</div>
-            <div class="text-gray-300 text-xs">Laser Hull Cradles</div>
+          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">📐 100% CAD</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Laser Hull Cradles</div>
           </div>
-          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">⭐ Lifetime</div>
-            <div class="text-gray-300 text-xs">Structural Warranty</div>
+          <div class="bg-navy-800/85 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">⭐ Lifetime</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Structural Warranty</div>
           </div>
         </div>
 
-        <div class="flex flex-wrap gap-4 items-center">
+        <div class="flex flex-wrap gap-4 items-center justify-center">
           <button onclick="openFabModal('Custom Heavy-Haul Build')"
             class="btn-gold inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-base shadow-2xl shadow-gold/30 hover:scale-[1.02] transition-transform">
             <svg class="w-5 h-5 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2-0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
             </svg>
             <span>Design Your Custom Trailer</span>
           </button>
@@ -611,7 +611,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Feature 1 -->
-        <div class="bg-navy p-8 rounded-2xl border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col justify-between" data-reveal>
+        <div class="custom-advantage-card bg-navy p-8 rounded-2xl border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col justify-between" data-reveal>
           <div>
             <div class="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold mb-6">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -619,8 +619,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
               </svg>
             </div>
             <div class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Structural Integrity</div>
-            <h3 class="font-display font-700 text-2xl text-white mb-3">6061-T6 Aluminum &amp; G90 Steel</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            <h3 class="font-display font-700 text-2xl text-white mb-3 min-h-[4.5rem] flex items-start">6061-T6 Aluminum &amp; G90 Steel</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 min-h-[6.5rem] flex items-start">
               CNC plasma cut and precision welded using massive 6" to 10" structural I-beams. We eliminate weak bolted cross-members in favor of full-penetration gusseted welds that withstand extreme highway vibration and saltwater exposure.
             </p>
           </div>
@@ -631,7 +631,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         </div>
 
         <!-- Feature 2 -->
-        <div class="bg-navy p-8 rounded-2xl border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col justify-between" data-reveal>
+        <div class="custom-advantage-card bg-navy p-8 rounded-2xl border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col justify-between" data-reveal>
           <div>
             <div class="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold mb-6">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -639,8 +639,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
               </svg>
             </div>
             <div class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Hull Protection</div>
-            <h3 class="font-display font-700 text-2xl text-white mb-3">Laser-Scanned Hull Bunks</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            <h3 class="font-display font-700 text-2xl text-white mb-3 min-h-[4.5rem] flex items-start">Laser-Scanned Hull Bunks</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 min-h-[6.5rem] flex items-start">
               Generic trailers cause hull oil-canning and hook distortion. We take digital hull scans to custom fabricate bunk brackets and carpeted cypress bunks that support your boat's stringers exactly where the naval architect specified.
             </p>
           </div>
@@ -651,7 +651,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         </div>
 
         <!-- Feature 3 -->
-        <div class="bg-navy p-8 rounded-2xl border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col justify-between" data-reveal>
+        <div class="custom-advantage-card bg-navy p-8 rounded-2xl border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col justify-between" data-reveal>
           <div>
             <div class="w-12 h-12 rounded-xl bg-gold/15 border border-gold/30 flex items-center justify-center text-gold mb-6">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -659,8 +659,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
               </svg>
             </div>
             <div class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Towing Safety</div>
-            <h3 class="font-display font-700 text-2xl text-white mb-3">Calibrated Axle Geometry</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            <h3 class="font-display font-700 text-2xl text-white mb-3 min-h-[4.5rem] flex items-start">Calibrated Axle Geometry</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6 min-h-[6.5rem] flex items-start">
               Whether you need a heavy-duty single axle, tandem setup, or commercial tri-axle running gear, our engineers calculate the precise center-of-mass to lock in the optimal 7%–10% tongue weight, eliminating dangerous trailer sway.
             </p>
           </div>
@@ -927,7 +927,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
         <!-- Build 1 -->
-        <div class="bg-navy rounded-2xl overflow-hidden border border-white/10 hover:border-gold/50 transition-all duration-300 card-hover flex flex-col group" data-reveal>
+        <div class="custom-build-card bg-navy rounded-2xl overflow-hidden border border-white/10 hover:border-gold/50 transition-all duration-300 card-hover flex flex-col group" data-reveal>
           <div class="h-60 overflow-hidden relative">
             <img src="images/model_heavyhaul_trailer.jpg" alt="Custom offshore tournament triple axle boat trailer"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -940,8 +940,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
           </div>
           <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display font-700 text-2xl text-white mb-2">Offshore Commander 36</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            <h3 class="font-display font-700 text-2xl text-white mb-2 min-h-[4.25rem] flex items-start">Offshore Commander 36</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 min-h-[5.5rem] flex items-start">
               Custom engineered for 34'–38' triple-outboard center consoles. Features 10" aluminum I-beams, 8,000-lb torsion axles, stainless disc brakes, and stepped hull keel pads.
             </p>
             <div class="mt-auto pt-4 border-t border-white/8 flex items-center justify-between">
@@ -952,7 +952,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         </div>
 
         <!-- Build 2 -->
-        <div class="bg-navy rounded-2xl overflow-hidden border border-white/10 hover:border-gold/50 transition-all duration-300 card-hover flex flex-col group" data-reveal>
+        <div class="custom-build-card bg-navy rounded-2xl overflow-hidden border border-white/10 hover:border-gold/50 transition-all duration-300 card-hover flex flex-col group" data-reveal>
           <div class="h-60 overflow-hidden relative">
             <img src="images/home2_coastalhaul_trailer.jpg" alt="Custom saltwater tandem axle marine boat trailer"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -965,8 +965,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
           </div>
           <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display font-700 text-2xl text-white mb-2">CoastalHaul Saltwater Pro</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            <h3 class="font-display font-700 text-2xl text-white mb-2 min-h-[4.25rem] flex items-start">CoastalHaul Saltwater Pro</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 min-h-[5.5rem] flex items-start">
               Engineered for 24'–28' bay boats. Built with anodized marine aluminum, target bunk loading guides, Vault hybrid sealed hubs, and custom bow boarding ladder.
             </p>
             <div class="mt-auto pt-4 border-t border-white/8 flex items-center justify-between">
@@ -977,7 +977,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         </div>
 
         <!-- Build 3 -->
-        <div class="bg-navy rounded-2xl overflow-hidden border border-white/10 hover:border-gold/50 transition-all duration-300 card-hover flex flex-col group" data-reveal>
+        <div class="custom-build-card bg-navy rounded-2xl overflow-hidden border border-white/10 hover:border-gold/50 transition-all duration-300 card-hover flex flex-col group" data-reveal>
           <div class="h-60 overflow-hidden relative">
             <img src="images/cat_pontoon_trailer.jpg" alt="Custom tritoon and pontoon heavy duty boat trailer"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -990,8 +990,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
           </div>
           <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display font-700 text-2xl text-white mb-2">PontoonMaster Tri-Tube Rig</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            <h3 class="font-display font-700 text-2xl text-white mb-2 min-h-[4.25rem] flex items-start">PontoonMaster Tri-Tube Rig</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 min-h-[5.5rem] flex items-start">
               Custom fitted cradle for tritoons with center tube lifting strakes. Includes heavy-duty front boarding steps with handrail, disc brakes, and full LED runway guides.
             </p>
             <div class="mt-auto pt-4 border-t border-white/8 flex items-center justify-between">

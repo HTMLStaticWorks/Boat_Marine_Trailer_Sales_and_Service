@@ -70,8 +70,27 @@
     html.light #main-header button[data-toggle-theme],
     html.light #main-header button[data-toggle-rtl] {
       background-color: rgba(0, 0, 0, 0.05) !important;
-      color: #1e293b !important;
+      color: #0a1628 !important;
       border: 1px solid #cbd5e1 !important;
+    }
+    html:not(.dark) #main-header button[data-toggle-theme]:hover,
+    html:not(.dark) #main-header button[data-toggle-rtl]:hover,
+    html.light #main-header button[data-toggle-theme]:hover,
+    html.light #main-header button[data-toggle-rtl]:hover,
+    html:not(.dark) button[data-toggle-rtl]:hover,
+    html.light button[data-toggle-rtl]:hover {
+      background-color: #0a1628 !important;
+      color: #c9a84c !important;
+      border-color: #0a1628 !important;
+      box-shadow: 0 4px 12px rgba(10, 22, 40, 0.25) !important;
+    }
+    html:not(.dark) #main-header button[data-toggle-theme]:hover span,
+    html:not(.dark) #main-header button[data-toggle-rtl]:hover span,
+    html.light #main-header button[data-toggle-theme]:hover span,
+    html.light #main-header button[data-toggle-rtl]:hover span,
+    html:not(.dark) button[data-toggle-rtl]:hover span,
+    html.light button[data-toggle-rtl]:hover span {
+      color: #c9a84c !important;
     }
     html:not(.dark) #main-header #mobile-menu-toggle,
     html.light #main-header #mobile-menu-toggle {
@@ -471,8 +490,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         <button data-toggle-theme aria-label="Toggle theme" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200">
           <span data-theme-icon>☀️</span>
         </button>
-        <button data-toggle-rtl aria-label="Toggle RTL" class="w-9 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200 font-mono text-xs font-bold">
-          <span data-rtl-icon>⇄</span>
+        <button data-toggle-rtl aria-label="Toggle RTL" class="px-2.5 h-9 flex items-center justify-center rounded-lg bg-white/5 hover:bg-white/10 text-gray-300 hover:text-gold transition-all duration-200 text-xs font-bold tracking-wider">
+          <span data-rtl-label>RTL</span>
         </button>
         <a href="signup.html" class="btn-gold px-5 py-2 text-sm rounded-lg font-bold shadow-lg shadow-gold/20">Signup</a>
       </div>
@@ -528,13 +547,13 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
     <div class="space-y-3">
       <a href="signup.html" class="btn-gold flex items-center justify-center w-full px-5 py-3 rounded-xl font-bold text-navy">Signup</a>
       <div class="flex gap-2 pt-2">
-        <button data-toggle-rtl class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+        <button data-toggle-rtl class="px-3.5 py-2.5 flex items-center justify-center gap-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors whitespace-nowrap flex-shrink-0">
           <span data-rtl-icon>⇄</span>
           <span data-rtl-label>RTL</span>
         </button>
-        <button data-toggle-theme class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors">
+        <button data-toggle-theme class="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-300 text-sm font-medium transition-colors whitespace-nowrap">
           <span data-theme-icon>☀️</span>
-          <span data-theme-label>Light Mode</span>
+          <span data-theme-label class="whitespace-nowrap">Light Mode</span>
         </button>
       </div>
     </div>
@@ -550,33 +569,33 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
     <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 24px 24px;"></div>
     
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-40 w-full">
-      <div class="max-w-3xl" data-reveal>
+      <div class="max-w-3xl mx-auto text-center" data-reveal>
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-semibold tracking-widest uppercase mb-5">
           <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
           Panama City Showroom, Sales Yard &amp; Service Facility
         </div>
         <h1 class="font-display font-900 text-5xl lg:text-7xl text-white leading-tight mb-4">LET'S TALK<br/><span class="text-gradient-gold">BOAT TRAILERS.</span></h1>
-        <p class="text-lg sm:text-xl text-gray-200 leading-relaxed max-w-2xl mb-8">
+        <p class="text-lg sm:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto mb-8">
           Visit our showroom sales lot, schedule an expedited bay in our 6-bay service workshop, or consult with our master fabricators for a custom boat trailer build.
         </p>
 
         <!-- Facility Quick Stats -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl">
-          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">📍 Harbor Drive</div>
-            <div class="text-gray-300 text-xs">Panama City, FL</div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto items-stretch">
+          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">📍 Harbor Drive</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Panama City, FL</div>
           </div>
-          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">⚡ 40+ In-Stock</div>
-            <div class="text-gray-300 text-xs">Ready for Pickup</div>
+          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">⚡ 40+ In-Stock</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Ready for Pickup</div>
           </div>
-          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">🛠️ 6 Service Bays</div>
-            <div class="text-gray-300 text-xs">Same-Day Diagnostic</div>
+          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">🛠️ 6 Service Bays</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Same-Day Diagnostic</div>
           </div>
-          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center">
-            <div class="text-gold font-bold text-sm">🚚 55-Ft Turnaround</div>
-            <div class="text-gray-300 text-xs">Easy Rig Towing Access</div>
+          <div class="bg-navy-800/80 backdrop-blur-md border border-white/10 rounded-xl p-3 text-center flex flex-col justify-center h-full min-h-[4.75rem]">
+            <div class="text-gold font-bold text-sm leading-tight flex items-center justify-center min-h-[1.75rem]">🚚 55' Turnaround</div>
+            <div class="text-gray-300 text-xs leading-tight flex items-center justify-center min-h-[1.5rem] mt-1">Easy Rig Access</div>
           </div>
         </div>
       </div>
@@ -734,7 +753,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <!-- Facility Card 1 -->
-        <div class="bg-navy-800 rounded-2xl overflow-hidden border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col group" data-reveal>
+        <div class="facility-card bg-navy-800 rounded-2xl overflow-hidden border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col group" data-reveal>
           <div class="h-60 overflow-hidden relative">
             <img src="images/model_heavyhaul_trailer.jpg" alt="MarineHaul Pro boat trailer sales lot and showroom in Panama City"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -747,8 +766,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
           </div>
           <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display font-700 text-2xl text-white mb-2">Showroom &amp; Trailer Yard</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            <h3 class="font-display font-700 text-2xl text-white mb-2 min-h-[4rem] flex items-start">Showroom &amp; Trailer Yard</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 min-h-[5.5rem] flex items-start">
               Browse brand-new single, tandem, and tri-axle marine trailers on display. Hook up and drive away today with on-site tag processing and certified hitch setup.
             </p>
             <div class="mt-auto pt-4 border-t border-white/8 text-xs text-gold font-bold">
@@ -758,7 +777,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         </div>
 
         <!-- Facility Card 2 -->
-        <div class="bg-navy-800 rounded-2xl overflow-hidden border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col group" data-reveal>
+        <div class="facility-card bg-navy-800 rounded-2xl overflow-hidden border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col group" data-reveal>
           <div class="h-60 overflow-hidden relative">
             <img src="images/service_trailer_workshop.jpg" alt="Certified 6-bay marine trailer service and repair workshop"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -771,8 +790,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
           </div>
           <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display font-700 text-2xl text-white mb-2">6-Bay Service Workshop</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            <h3 class="font-display font-700 text-2xl text-white mb-2 min-h-[4rem] flex items-start">6-Bay Service Workshop</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 min-h-[5.5rem] flex items-start">
               Equipped with hydraulic lift gantries, high-pressure brake flush stations, bearing press equipment, and computerized axle alignment lasers.
             </p>
             <div class="mt-auto pt-4 border-t border-white/8 text-xs text-gold font-bold">
@@ -782,7 +801,7 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
         </div>
 
         <!-- Facility Card 3 -->
-        <div class="bg-navy-800 rounded-2xl overflow-hidden border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col group" data-reveal>
+        <div class="facility-card bg-navy-800 rounded-2xl overflow-hidden border border-white/10 hover:border-gold/40 transition-all duration-300 card-hover flex flex-col group" data-reveal>
           <div class="h-60 overflow-hidden relative">
             <img src="images/home2_trailer_fabrication.jpg" alt="AWS certified welding and aluminum marine trailer fabrication plant"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
@@ -795,8 +814,8 @@ html.light .absolute[class*="bottom-"] .text-gray-300 {
             </div>
           </div>
           <div class="p-6 flex flex-col flex-1">
-            <h3 class="font-display font-700 text-2xl text-white mb-2">Custom Fabrication Plant</h3>
-            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+            <h3 class="font-display font-700 text-2xl text-white mb-2 min-h-[4rem] flex items-start">Custom Fabrication Plant</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4 min-h-[5.5rem] flex items-start">
               Where custom cradles and aluminum I-beams are CNC cut and TIG welded to match unique boat hulls, high-deadrise step bottoms, and catamaran tunnels.
             </p>
             <div class="mt-auto pt-4 border-t border-white/8 text-xs text-gold font-bold">
